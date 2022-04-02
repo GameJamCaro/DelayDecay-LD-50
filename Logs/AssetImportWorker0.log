@@ -11,19 +11,19 @@ D:\2020.3.1f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/UnityProjects/LD50
+D:/UnityProjects/AntiAging-LD-50
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61193
-Successfully changed project path to: D:/UnityProjects/LD50
-D:/UnityProjects/LD50
+63966
+Successfully changed project path to: D:/UnityProjects/AntiAging-LD-50
+D:/UnityProjects/AntiAging-LD-50
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 22.17 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 54.58 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.1f1 (77a89f25062f)
 [Subsystems] Discovering subsystems at path D:/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/UnityProjects/LD50/Assets
+[Subsystems] Discovering subsystems at path D:/UnityProjects/AntiAging-LD-50/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -31,106 +31,1456 @@ Direct3D:
     Vendor:   
     VRAM:     2007 MB
     Driver:   30.0.14.9729
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
 Mono path[0] = 'D:/2020.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'D:/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56616
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56952
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/2020.3.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001355 seconds.
+Registered in 0.001728 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 29.67 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 83.61 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.035 seconds
+- Completed reload, in  2.431 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000563 seconds.
+Registered in 0.002202 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 44.91 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.068 seconds
+- Completed reload, in  1.092 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.19 seconds
-Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1114 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 56.9 MB.
-System memory in use after: 57.0 MB.
+Unloading 2417 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.0 MB.
+System memory in use after: 112.2 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1556.
-Total: 2.534300 ms (FindLiveObjects: 0.146300 ms CreateObjectMapping: 0.045900 ms MarkObjects: 2.252000 ms  DeleteObjects: 0.088800 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scripts/Billboard.cs
-  artifactKey: Guid(c8f9be30c0ac116418c9d221a2180517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Billboard.cs using Guid(c8f9be30c0ac116418c9d221a2180517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57ebd4bb6320d4181bc5b0d6e6a301af') in 0.057129 seconds
-  Import took 0.091788 seconds .
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2859.
+Total: 2.222600 ms (FindLiveObjects: 0.273200 ms CreateObjectMapping: 0.111900 ms MarkObjects: 1.692900 ms  DeleteObjects: 0.143200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000380 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(1d0238e2713def445800121de4693486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(1d0238e2713def445800121de4693486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2970f7af6b913fe2b8e9523c28bf8c7b') in 0.015248 seconds
-  Import took 0.018927 seconds .
+  path: Assets/Rendering/UniversalRenderPipelineAsset_Renderer.asset
+  artifactKey: Guid(107e61572881c744aa16a10d2f1344ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rendering/UniversalRenderPipelineAsset_Renderer.asset using Guid(107e61572881c744aa16a10d2f1344ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4694386ae73ef0791f9c392b6a94ab0b') in 0.199344 seconds
+  Import took 0.204841 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 36.842403 seconds.
-  path: Assets/Scripts/Billboard.cs
-  artifactKey: Guid(c8f9be30c0ac116418c9d221a2180517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Billboard.cs using Guid(c8f9be30c0ac116418c9d221a2180517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9467f2bf8a4d51c94f3d258c2c7572e9') in 0.006417 seconds
-  Import took 0.010004 seconds .
+  Time since last request: 0.737636 seconds.
+  path: Assets/Shaders/ToonShader.mat
+  artifactKey: Guid(4d8dbef2631302143b479686ca3f8824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/ToonShader.mat using Guid(4d8dbef2631302143b479686ca3f8824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '258f0fdac7170e6ac2ebc3b64082a3cb') in 0.634671 seconds
+  Import took 0.643970 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.037404 seconds.
-  path: Assets/Scripts/Billboard.cs
-  artifactKey: Guid(c8f9be30c0ac116418c9d221a2180517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Billboard.cs using Guid(c8f9be30c0ac116418c9d221a2180517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9467f2bf8a4d51c94f3d258c2c7572e9') in 0.014681 seconds
-  Import took 0.018601 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 73.954172 seconds.
-  path: Assets/Scripts/Billboard.cs
-  artifactKey: Guid(c8f9be30c0ac116418c9d221a2180517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Billboard.cs using Guid(c8f9be30c0ac116418c9d221a2180517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f346781ef3f51de41f3ec984eeca6c4') in 0.007549 seconds
-  Import took 0.017610 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026248 seconds.
-  path: Assets/Scripts/Billboard.cs
-  artifactKey: Guid(c8f9be30c0ac116418c9d221a2180517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Billboard.cs using Guid(c8f9be30c0ac116418c9d221a2180517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f346781ef3f51de41f3ec984eeca6c4') in 0.016522 seconds
-  Import took 0.019916 seconds .
+  Time since last request: 29.241711 seconds.
+  path: Assets/Rendering/UniversalRenderPipelineAsset_Renderer.asset
+  artifactKey: Guid(107e61572881c744aa16a10d2f1344ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rendering/UniversalRenderPipelineAsset_Renderer.asset using Guid(107e61572881c744aa16a10d2f1344ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed19703c737e66c524da78321c3c553c') in 0.004842 seconds
+  Import took 0.009971 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000663 seconds.
+Registered in 0.001166 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.901 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2424 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 115.6 MB.
+System memory in use after: 115.8 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 3058.
+Total: 2.627500 ms (FindLiveObjects: 0.263100 ms CreateObjectMapping: 0.130900 ms MarkObjects: 2.111900 ms  DeleteObjects: 0.120700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 334.153399 seconds.
+  path: Assets/Ink
+  artifactKey: Guid(f866818fcc9c5b445b455aa722d840b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink using Guid(f866818fcc9c5b445b455aa722d840b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5840e8254197838d05003db398a30cd0') in 0.004653 seconds
+  Import took 0.008587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005888 seconds.
+  path: Assets/Ink
+  artifactKey: Guid(f866818fcc9c5b445b455aa722d840b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink using Guid(f866818fcc9c5b445b455aa722d840b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5840e8254197838d05003db398a30cd0') in 0.002624 seconds
+  Import took 0.006627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.887657 seconds.
+  path: Assets/Ink/Demos
+  artifactKey: Guid(1ea997059b193ec4f93c2ae11630ad48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos using Guid(1ea997059b193ec4f93c2ae11630ad48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e0b079a7415473a182d5c18e580b17e') in 0.002483 seconds
+  Import took 0.007648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.185129 seconds.
+  path: Assets/Ink/Demos/Basic Demo
+  artifactKey: Guid(36fb6d04b0b2d3b478161622da3f094c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo using Guid(36fb6d04b0b2d3b478161622da3f094c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf15313164b592a92aff38e9c2ff2aa4') in 0.002808 seconds
+  Import took 0.007092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.655758 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink
+  artifactKey: Guid(29fc0cbe08c0d4f87975cc7a62f72510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink using Guid(29fc0cbe08c0d4f87975cc7a62f72510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bfd04a47cee68b04f5b60b85c00dcd7') in 0.002714 seconds
+  Import took 0.006920 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 112.403218 seconds.
+  path: Assets/Ink/Text
+  artifactKey: Guid(80f35ec3bc5dd3843a53e58696249c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Text using Guid(80f35ec3bc5dd3843a53e58696249c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '958f092e796139e5e685177f3d4b2880') in 0.002792 seconds
+  Import took 0.007768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 403.112772 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/Start.json
+  artifactKey: Guid(873520f095948dc40a2e2bd31bd7b1f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/Start.json using Guid(873520f095948dc40a2e2bd31bd7b1f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1556204b591674d0c2c53ea516d134d') in 0.021525 seconds
+  Import took 0.025913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018592 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/Start.json
+  artifactKey: Guid(873520f095948dc40a2e2bd31bd7b1f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/Start.json using Guid(873520f095948dc40a2e2bd31bd7b1f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1556204b591674d0c2c53ea516d134d') in 0.002930 seconds
+  Import took 0.006886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.526558 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/story.json
+  artifactKey: Guid(6cf48bb6d89824cc69e35b43f9a1aca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/story.json using Guid(6cf48bb6d89824cc69e35b43f9a1aca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d5efb22a8032abf5b6a920b8dd750cd') in 0.004304 seconds
+  Import took 0.010550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.538452 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000864 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000592 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000677 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014571 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000641 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014067 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000904 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012554 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000982 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016252 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000721 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.006997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010277 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001391 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012416 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001061 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012582 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001003 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012495 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000871 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015889 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001411 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012089 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001029 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013388 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000879 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013322 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000900 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011967 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000953 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012601 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000978 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015448 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000906 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005136 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012456 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000966 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012351 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001192 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011638 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000760 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013307 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000973 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013173 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000997 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015921 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001454 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012717 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000960 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012228 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000933 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012514 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002379 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.006633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012120 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000965 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012332 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001505 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015188 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000788 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013078 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000940 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012795 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001453 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005594 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013056 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000986 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012844 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000915 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012020 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000883 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015752 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000939 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012901 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001038 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011196 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001052 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012216 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001576 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012754 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000993 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012160 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000867 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004959 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016065 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000870 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011866 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000861 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012018 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000767 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013077 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000946 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012394 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000879 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012395 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000932 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017131 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001543 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012098 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001130 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011805 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001254 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011166 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000837 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013199 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000812 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012493 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000836 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012204 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000847 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004671 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015925 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000763 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013069 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001088 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012837 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000876 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012412 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000942 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012966 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000841 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013164 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000902 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015813 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001094 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012865 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000693 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005793 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011672 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000950 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013624 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000970 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012424 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000893 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012820 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000851 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017194 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001939 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011537 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000957 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012652 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001308 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013019 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000929 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012112 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000861 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012308 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000908 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012077 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001040 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015272 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000865 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012162 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000906 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012581 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000883 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013086 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000912 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013589 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000899 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013071 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000901 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016325 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001089 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021147 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001059 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013378 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000821 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012220 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001786 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011618 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000902 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011798 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000702 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012532 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000669 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000758 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000717 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011784 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000880 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012397 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001094 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012442 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000913 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012651 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001079 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012406 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000873 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015309 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000996 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012729 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000856 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012513 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000846 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012156 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001366 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012005 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000839 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012027 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000671 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015758 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000870 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016040 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000985 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015364 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000961 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014674 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001201 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016081 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001122 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017323 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000986 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016113 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001251 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015762 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000842 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015033 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000862 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015888 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000973 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015355 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000927 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020491 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001299 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016241 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001134 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016335 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000961 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017349 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000838 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015818 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001425 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.005313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019833 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000875 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.004916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.290244 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/18Birthday.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000857 seconds
+  ERROR: Build asset version error: assets/ink/demos/basic demo/ink/18birthday.json in SourceAssetDB has modification time of '2022-04-02T07:42:57.758599Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+  Import took 0.007163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.089850 seconds.
+  path: Assets/Ink/Demos/Basic Demo/Ink/story.json
+  artifactKey: Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Demos/Basic Demo/Ink/story.json using Guid(a6da84243e270864b93fa9e12c6abcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e2026b292dbddfde1d05ed223c74d7a') in 0.002103 seconds
+  Import took 0.007107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.183872 seconds.
+  path: Assets/Ink/Text/Story.json
+  artifactKey: Guid(34a26a21d924d98499ae42432e06dc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Text/Story.json using Guid(34a26a21d924d98499ae42432e06dc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e1c9df02772ca4f3b1af2d593ce148f') in 0.003127 seconds
+  Import took 0.008360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001009 seconds.
+  path: Assets/Ink/Text/Story.json
+  artifactKey: Guid(34a26a21d924d98499ae42432e06dc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Text/Story.json using Guid(34a26a21d924d98499ae42432e06dc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e1c9df02772ca4f3b1af2d593ce148f') in 0.002531 seconds
+  Import took 0.007763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1020.379740 seconds.
+  path: Assets/TextMesh Pro/Fonts
+  artifactKey: Guid(6ab70aee4d56447429c680537fbf93ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts using Guid(6ab70aee4d56447429c680537fbf93ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0050254a41424603d63ee1422c5403f') in 0.002804 seconds
+  Import took 0.008562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.068256 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cca8281c605a06626777caa41de69c7d') in 0.170891 seconds
+  Import took 0.176069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.264705 seconds.
+  path: Assets/TextMesh Pro/Fonts/VarelaRound-Regular.ttf
+  artifactKey: Guid(b56ad9ea29c2cd741a0b2dd077c6064e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/VarelaRound-Regular.ttf using Guid(b56ad9ea29c2cd741a0b2dd077c6064e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243dbf8154638af28cec8cc792ba0174') in 0.013533 seconds
+  Import took 0.018161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.079147 seconds.
+  path: Assets/TextMesh Pro/Fonts/VarelaRound-Regular SDF.asset
+  artifactKey: Guid(946db6e9d01fb854abd6cbac881f0d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/VarelaRound-Regular SDF.asset using Guid(946db6e9d01fb854abd6cbac881f0d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+ -> (artifact id: 'cfb75497721b43bb0adb7f5c3f4c6dd6') in 0.033903 seconds
+  Import took 0.038723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.327397 seconds.
+  path: Assets/TextMesh Pro/Fonts/VarelaRound-Regular SDF.asset
+  artifactKey: Guid(946db6e9d01fb854abd6cbac881f0d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/VarelaRound-Regular SDF.asset using Guid(946db6e9d01fb854abd6cbac881f0d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+ -> (artifact id: '72db7932f9d8d85cfb3bd2fa6402c718') in 0.034514 seconds
+  Import took 0.039487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 76.960030 seconds.
+  path: Assets/TextMesh Pro/Fonts/VarelaRound-Regular SDF.asset
+  artifactKey: Guid(946db6e9d01fb854abd6cbac881f0d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/VarelaRound-Regular SDF.asset using Guid(946db6e9d01fb854abd6cbac881f0d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+ -> (artifact id: 'b84360c958decf45d50470d06ebbf07f') in 0.032861 seconds
+  Import took 0.037166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 143.335520 seconds.
+  path: Assets/Scripts/StoryManager.cs
+  artifactKey: Guid(1ac83a67b96c3cf46a8cee2d88d42831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/StoryManager.cs using Guid(1ac83a67b96c3cf46a8cee2d88d42831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88997665fb4592bdf0c5070c88d395ef') in 0.010105 seconds
+  Import took 0.015834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006215 seconds.
+  path: Assets/Scripts/StoryManager.cs
+  artifactKey: Guid(1ac83a67b96c3cf46a8cee2d88d42831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/StoryManager.cs using Guid(1ac83a67b96c3cf46a8cee2d88d42831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88997665fb4592bdf0c5070c88d395ef') in 0.002036 seconds
+  Import took 0.007773 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001153 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.899 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2438 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 117.6 MB.
+System memory in use after: 117.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3104.
+Total: 2.592800 ms (FindLiveObjects: 0.232900 ms CreateObjectMapping: 0.111400 ms MarkObjects: 1.944200 ms  DeleteObjects: 0.303500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.000239 seconds.
+  path: Assets/Scripts/YouthManager.cs
+  artifactKey: Guid(f45d2cf81d765c244b87fd5856ae0095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/YouthManager.cs using Guid(f45d2cf81d765c244b87fd5856ae0095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0de06aaf69165ac5fa4a9351ab9547ae') in 0.007699 seconds
+  Import took 0.012472 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001081 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.915 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2437 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 117.5 MB.
+System memory in use after: 117.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3108.
+Total: 3.131300 ms (FindLiveObjects: 0.380100 ms CreateObjectMapping: 0.144200 ms MarkObjects: 2.254200 ms  DeleteObjects: 0.351600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001208 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.939 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2437 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 117.6 MB.
+System memory in use after: 117.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3111.
+Total: 2.670600 ms (FindLiveObjects: 0.331300 ms CreateObjectMapping: 0.129600 ms MarkObjects: 1.888800 ms  DeleteObjects: 0.320100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 142.280152 seconds.
+  path: Assets/Scripts/YouthManager.cs
+  artifactKey: Guid(f45d2cf81d765c244b87fd5856ae0095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/YouthManager.cs using Guid(f45d2cf81d765c244b87fd5856ae0095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09f49ce9de56bdc92026ef11c1f5192e') in 0.005603 seconds
+  Import took 0.009688 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001580 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.084 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2437 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 117.5 MB.
+System memory in use after: 117.1 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3114.
+Total: 2.642900 ms (FindLiveObjects: 0.307900 ms CreateObjectMapping: 0.152900 ms MarkObjects: 1.841500 ms  DeleteObjects: 0.338900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1390.079211 seconds.
+  path: Assets/Scripts/StoryManager.cs
+  artifactKey: Guid(1ac83a67b96c3cf46a8cee2d88d42831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/StoryManager.cs using Guid(1ac83a67b96c3cf46a8cee2d88d42831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8643fd7bc0308967a5f196237c951c7') in 0.006059 seconds
+  Import took 0.010975 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001234 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.905 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2437 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 117.6 MB.
+System memory in use after: 117.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3117.
+Total: 2.797300 ms (FindLiveObjects: 0.278000 ms CreateObjectMapping: 0.107000 ms MarkObjects: 2.063800 ms  DeleteObjects: 0.347300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001526 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
@@ -138,373 +1488,105 @@ RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
 - Completed reload, in  0.906 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1109 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 56.9 MB.
-System memory in use after: 57.0 MB.
+Unloading 2437 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 117.6 MB.
+System memory in use after: 117.3 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1559.
-Total: 1.499100 ms (FindLiveObjects: 0.138200 ms CreateObjectMapping: 0.039300 ms MarkObjects: 1.236600 ms  DeleteObjects: 0.083400 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3120.
+Total: 2.594900 ms (FindLiveObjects: 0.299600 ms CreateObjectMapping: 0.137400 ms MarkObjects: 1.809200 ms  DeleteObjects: 0.347700 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000562 seconds.
+Registered in 0.001126 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.954 seconds
+- Completed reload, in  0.939 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1109 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 56.9 MB.
-System memory in use after: 57.0 MB.
+Unloading 2437 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 117.6 MB.
+System memory in use after: 117.3 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1562.
-Total: 1.919900 ms (FindLiveObjects: 0.143500 ms CreateObjectMapping: 0.039300 ms MarkObjects: 1.672100 ms  DeleteObjects: 0.063000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 2704.636254 seconds.
-  path: Assets/Scripts/Billboard.cs
-  artifactKey: Guid(c8f9be30c0ac116418c9d221a2180517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Billboard.cs using Guid(c8f9be30c0ac116418c9d221a2180517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04a9114ce41a80dac6e8ce2b2955d894') in 0.004815 seconds
-  Import took 0.937720 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.572379 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6374019befeac6ce670f13ba9960efb') in 0.009380 seconds
-  Import took 0.856299 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.059507 seconds.
-  path: Assets/Shaders
-  artifactKey: Guid(631c719ba4afb4f4eac05edcacfd0163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders using Guid(631c719ba4afb4f4eac05edcacfd0163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fdb5ba74e4ac3a930802fc250293120') in 0.012103 seconds
-  Import took 0.015533 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.864797 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(316fa67c286ae2940a4a7ca837efaef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(316fa67c286ae2940a4a7ca837efaef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e901ebb98e5544075c2dca9f2596442') in 0.008110 seconds
-  Import took 0.011411 seconds .
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3123.
+Total: 3.007000 ms (FindLiveObjects: 0.393600 ms CreateObjectMapping: 0.135000 ms MarkObjects: 1.841200 ms  DeleteObjects: 0.636100 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.010350 seconds.
+Registered in 0.001116 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 70.42 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.706 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Nature/SpeedTree7': dependency 'BillboardShader' shader 'Universal Render Pipeline/Nature/SpeedTree7 Billboard' not found
-Shader 'Universal Render Pipeline/Baked Lit': fallback shader 'Universal Render Pipeline/Unlit' not found
-Shader 'Universal Render Pipeline/Simple Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Universal Render Pipeline/Terrain/Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
-Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
-Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
-Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2362 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.4 MB.
-System memory in use after: 101.9 MB.
-
-Unloading 62 unused Assets to reduce memory usage. Loaded Objects now: 2761.
-Total: 6.696600 ms (FindLiveObjects: 0.277500 ms CreateObjectMapping: 0.147300 ms MarkObjects: 1.758500 ms  DeleteObjects: 4.511700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 200.740398 seconds.
-  path: Assets/Rendering
-  artifactKey: Guid(808fa1686ce16bd45b55d9a51bdb13bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rendering using Guid(808fa1686ce16bd45b55d9a51bdb13bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15fa9908901f453f2acffd0064e77575') in 0.009326 seconds
-  Import took 0.015102 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001723 seconds.
-  path: Assets/Rendering
-  artifactKey: Guid(808fa1686ce16bd45b55d9a51bdb13bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rendering using Guid(808fa1686ce16bd45b55d9a51bdb13bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15fa9908901f453f2acffd0064e77575') in 0.005783 seconds
-  Import took 0.009880 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.644037 seconds.
-  path: Assets/Rendering/UniversalRenderPipelineAsset.asset
-  artifactKey: Guid(7a3a99ab1781efe45842d6ca3742b323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rendering/UniversalRenderPipelineAsset.asset using Guid(7a3a99ab1781efe45842d6ca3742b323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '806a23c9deca2c31bce3527a5dfe31a3') in 0.062802 seconds
-  Import took 0.067248 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000486 seconds.
-  path: Assets/Rendering/UniversalRenderPipelineAsset_Renderer.asset
-  artifactKey: Guid(107e61572881c744aa16a10d2f1344ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rendering/UniversalRenderPipelineAsset_Renderer.asset using Guid(107e61572881c744aa16a10d2f1344ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16d263ea86920c0471af2da5011368b3') in 0.040070 seconds
-  Import took 0.044234 seconds .
-
-========================================================================
-Received Prepare
-Switching render pipeline 00000000000000000000000000000000 -> 7a3a99ab1781efe45842d6ca3742b323
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.00 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 108 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 64.7 MB.
-System memory in use after: 62.2 MB.
-
-Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2829.
-Total: 3.984700 ms (FindLiveObjects: 0.257300 ms CreateObjectMapping: 0.105300 ms MarkObjects: 2.284300 ms  DeleteObjects: 1.336900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 50.818351 seconds.
-  path: Assets/Shaders/ToonShader.shadergraph
-  artifactKey: Guid(60b3a18e9419ff34eb99ec4b868a8ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/ToonShader.shadergraph using Guid(60b3a18e9419ff34eb99ec4b868a8ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2664d69187904f78e68cdc5cbd74b803') in 0.012007 seconds
-  Import took 0.015892 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.530263 seconds.
-  path: Assets/Shaders/ToonShader.shadergraph
-  artifactKey: Guid(60b3a18e9419ff34eb99ec4b868a8ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/ToonShader.shadergraph using Guid(60b3a18e9419ff34eb99ec4b868a8ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2664d69187904f78e68cdc5cbd74b803') in 0.006913 seconds
-  Import took 0.012402 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 37.084165 seconds.
-  path: Assets/Rendering/UniversalRenderPipelineAsset.asset
-  artifactKey: Guid(7a3a99ab1781efe45842d6ca3742b323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rendering/UniversalRenderPipelineAsset.asset using Guid(7a3a99ab1781efe45842d6ca3742b323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67af218fed4ba1c3d097b13a41f70a68') in 0.003787 seconds
-  Import took 0.008024 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028106 seconds.
-  path: Assets/Rendering/UniversalRenderPipelineAsset.asset
-  artifactKey: Guid(7a3a99ab1781efe45842d6ca3742b323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rendering/UniversalRenderPipelineAsset.asset using Guid(7a3a99ab1781efe45842d6ca3742b323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67af218fed4ba1c3d097b13a41f70a68') in 0.005561 seconds
-  Import took 0.009404 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.098147 seconds.
-  path: Assets/Rendering/UniversalRenderPipelineAsset_Renderer.asset
-  artifactKey: Guid(107e61572881c744aa16a10d2f1344ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rendering/UniversalRenderPipelineAsset_Renderer.asset using Guid(107e61572881c744aa16a10d2f1344ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18a09e9b5d2b41f77504dbf83da3c2d5') in 0.010407 seconds
-  Import took 0.019733 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 100.394231 seconds.
-  path: Assets/Shaders/ToonShader.shadergraph
-  artifactKey: Guid(60b3a18e9419ff34eb99ec4b868a8ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/ToonShader.shadergraph using Guid(60b3a18e9419ff34eb99ec4b868a8ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4727a8803161d6a0562d3f43264ef855') in 0.006867 seconds
-  Import took 0.011327 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.268507 seconds.
-  path: Assets/Shaders/ToonShader.shadergraph
-  artifactKey: Guid(60b3a18e9419ff34eb99ec4b868a8ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/ToonShader.shadergraph using Guid(60b3a18e9419ff34eb99ec4b868a8ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4727a8803161d6a0562d3f43264ef855') in 0.007378 seconds
-  Import took 0.011358 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 54.698461 seconds.
-  path: Assets/Shaders/ToonShader.mat
-  artifactKey: Guid(4d8dbef2631302143b479686ca3f8824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/ToonShader.mat using Guid(4d8dbef2631302143b479686ca3f8824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e468092aff373f51f25e6bef84f44f7b') in 0.220010 seconds
-  Import took 0.225210 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 444.093153 seconds.
-  path: Assets/Materials
-  artifactKey: Guid(fd73494f8638f16468d09ef76ca92a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials using Guid(fd73494f8638f16468d09ef76ca92a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34f54cf1d4d007c50b5085236287e436') in 0.004658 seconds
-  Import took 0.009731 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.157498 seconds.
-  path: Assets/Materials/mat.mat
-  artifactKey: Guid(76b3de1d3b49085449cb7771463c028b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/mat.mat using Guid(76b3de1d3b49085449cb7771463c028b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4efa81225c1452393c024be50f8e39df') in 0.027978 seconds
-  Import took 0.031878 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.163968 seconds.
-  path: Assets/Materials/mat.mat
-  artifactKey: Guid(76b3de1d3b49085449cb7771463c028b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/mat.mat using Guid(76b3de1d3b49085449cb7771463c028b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d82612f7fb16a5345a5fee91eb9afc') in 0.022521 seconds
-  Import took 0.028096 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001144 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.983 seconds
+- Completed reload, in  0.912 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2345 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 112.9 MB.
-System memory in use after: 110.7 MB.
+Unloading 2437 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 117.6 MB.
+System memory in use after: 117.3 MB.
 
-Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2917.
-Total: 3.359300 ms (FindLiveObjects: 0.277400 ms CreateObjectMapping: 0.131500 ms MarkObjects: 1.587100 ms  DeleteObjects: 1.362100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 43.830776 seconds.
-  path: Assets/Rendering/UniversalRenderPipelineAsset.asset
-  artifactKey: Guid(7a3a99ab1781efe45842d6ca3742b323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rendering/UniversalRenderPipelineAsset.asset using Guid(7a3a99ab1781efe45842d6ca3742b323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e7bd1c2e32c624b1a8fa7a3c1fc6d3b') in 0.013959 seconds
-  Import took 0.017826 seconds .
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3126.
+Total: 3.010100 ms (FindLiveObjects: 0.295100 ms CreateObjectMapping: 0.128000 ms MarkObjects: 2.215200 ms  DeleteObjects: 0.370800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000504 seconds.
-  path: Assets/Rendering/UniversalRenderPipelineAsset_Renderer.asset
-  artifactKey: Guid(107e61572881c744aa16a10d2f1344ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rendering/UniversalRenderPipelineAsset_Renderer.asset using Guid(107e61572881c744aa16a10d2f1344ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9657fb24a9059c48df88ef85059eabf') in 0.005824 seconds
-  Import took 0.009765 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001229 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.889 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2342 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 112.8 MB.
-System memory in use after: 110.5 MB.
-
-Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2923.
-Total: 3.560800 ms (FindLiveObjects: 0.335800 ms CreateObjectMapping: 0.118100 ms MarkObjects: 1.696500 ms  DeleteObjects: 1.409200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001672 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.973 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2340 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 112.7 MB.
-System memory in use after: 110.5 MB.
-
-Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2926.
-Total: 3.673400 ms (FindLiveObjects: 0.248400 ms CreateObjectMapping: 0.102600 ms MarkObjects: 1.845000 ms  DeleteObjects: 1.476100 ms)
+  Time since last request: 1410.210943 seconds.
+  path: Assets/TextMesh Pro/Fonts/VarelaRound-Regular SDF.asset
+  artifactKey: Guid(946db6e9d01fb854abd6cbac881f0d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/VarelaRound-Regular SDF.asset using Guid(946db6e9d01fb854abd6cbac881f0d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f52c497ce1cf70591df2704d39e28c30') in 0.208731 seconds
+  Import took 0.214406 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 407.437162 seconds.
-  path: Assets/Materials/mat.mat
-  artifactKey: Guid(76b3de1d3b49085449cb7771463c028b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/mat.mat using Guid(76b3de1d3b49085449cb7771463c028b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db113fb251fd41f80be0bd9fa22368fa') in 0.179975 seconds
-  Import took 0.185310 seconds .
+  Time since last request: 12.460778 seconds.
+  path: Assets/TextMesh Pro/Fonts/VarelaRound-Regular SDF.asset
+  artifactKey: Guid(946db6e9d01fb854abd6cbac881f0d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/VarelaRound-Regular SDF.asset using Guid(946db6e9d01fb854abd6cbac881f0d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9fa187f590347002a24c2fec4a5bc15') in 0.034787 seconds
+  Import took 0.040043 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.515571 seconds.
-  path: Assets/Materials/mat 1.mat
-  artifactKey: Guid(7221dbfd7cb686945b3f33b3daaffa00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/mat 1.mat using Guid(7221dbfd7cb686945b3f33b3daaffa00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70bab1b1b295e1a8ec04809ce2f273a7') in 0.016100 seconds
-  Import took 0.021162 seconds .
+  Time since last request: 517.664861 seconds.
+  path: Assets/TextMesh Pro/Fonts/HennyPenny-Regular.ttf
+  artifactKey: Guid(b5732580b09ff1d4995f2f8343e26220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/HennyPenny-Regular.ttf using Guid(b5732580b09ff1d4995f2f8343e26220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84a5f3f1a6d87826e0059328ca5586c1') in 0.023141 seconds
+  Import took 0.028358 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 42.230148 seconds.
-  path: Assets/Materials/mat 1.mat
-  artifactKey: Guid(7221dbfd7cb686945b3f33b3daaffa00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/mat 1.mat using Guid(7221dbfd7cb686945b3f33b3daaffa00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1739cc4cc7c8e6dcff800e43f7eb4785') in 0.025278 seconds
-  Import took 0.030898 seconds .
+  Time since last request: 7.306089 seconds.
+  path: Assets/TextMesh Pro/Fonts/HennyPenny-Regular SDF.asset
+  artifactKey: Guid(37790421a7e1ca34cb7c3a24da76e9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/HennyPenny-Regular SDF.asset using Guid(37790421a7e1ca34cb7c3a24da76e9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eff7a62db244e31adc346c9cd393707') in 0.013711 seconds
+  Import took 0.018327 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000447 seconds.
-  path: Assets/Materials/mat 2.mat
-  artifactKey: Guid(7522fa533a13034479572f16c69f6980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/mat 2.mat using Guid(7522fa533a13034479572f16c69f6980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f667e9ad1dcb45d211d0b9a2a87c90e7') in 0.016953 seconds
-  Import took 0.021652 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000411 seconds.
-  path: Assets/Materials/mat.mat
-  artifactKey: Guid(76b3de1d3b49085449cb7771463c028b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/mat.mat using Guid(76b3de1d3b49085449cb7771463c028b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efee4deaa57531206b86cec15bb70f31') in 0.017433 seconds
-  Import took 0.023415 seconds .
+  Time since last request: 67.500082 seconds.
+  path: Assets/TextMesh Pro/Fonts/HennyPenny-Regular SDF.asset
+  artifactKey: Guid(37790421a7e1ca34cb7c3a24da76e9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/HennyPenny-Regular SDF.asset using Guid(37790421a7e1ca34cb7c3a24da76e9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315dd2a186bc4aa756df2b5b64e7a4c4') in 0.032956 seconds
+  Import took 0.037841 seconds .
 
 ========================================================================
 Received Prepare
@@ -513,41 +1595,81 @@ Registered in 0.001108 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.913 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2437 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 117.7 MB.
+System memory in use after: 117.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3166.
+Total: 2.602100 ms (FindLiveObjects: 0.279500 ms CreateObjectMapping: 0.116400 ms MarkObjects: 1.845200 ms  DeleteObjects: 0.360300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001161 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.068 seconds
+- Completed reload, in  0.920 seconds
 Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2340 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 112.9 MB.
-System memory in use after: 110.7 MB.
+Unloading 2437 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 117.7 MB.
+System memory in use after: 117.4 MB.
 
-Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2966.
-Total: 3.641100 ms (FindLiveObjects: 0.258200 ms CreateObjectMapping: 0.110100 ms MarkObjects: 1.838500 ms  DeleteObjects: 1.433100 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3169.
+Total: 3.133900 ms (FindLiveObjects: 0.292000 ms CreateObjectMapping: 0.284100 ms MarkObjects: 2.097200 ms  DeleteObjects: 0.459400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 189.245575 seconds.
-  path: Assets/Scripts/ObjectMovement.cs
-  artifactKey: Guid(7aedeb17856c20c4a83b190597067d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ObjectMovement.cs using Guid(7aedeb17856c20c4a83b190597067d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52ef42f840373ef30f90cc301455ac60') in 0.024046 seconds
-  Import took 0.028171 seconds .
+  Time since last request: 923.947402 seconds.
+  path: Assets/TextMesh Pro/Fonts/VarelaRound-Regular SDF.asset
+  artifactKey: Guid(946db6e9d01fb854abd6cbac881f0d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/VarelaRound-Regular SDF.asset using Guid(946db6e9d01fb854abd6cbac881f0d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d70c3c82a2f512532d3b94077808d5') in 0.237081 seconds
+  Import took 0.241925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.959093 seconds.
+  path: Assets/TextMesh Pro/Fonts/VarelaRound-Regular SDF.asset
+  artifactKey: Guid(946db6e9d01fb854abd6cbac881f0d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/VarelaRound-Regular SDF.asset using Guid(946db6e9d01fb854abd6cbac881f0d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c61e9f11ff59ed8df9d256d9ee1324b') in 0.030110 seconds
+  Import took 0.034732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.513047 seconds.
+  path: Assets/Scripts/Menu.cs
+  artifactKey: Guid(362d0e128228362458ac3352b4e869e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Menu.cs using Guid(362d0e128228362458ac3352b4e869e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e8485c3b83eb1ce175b3faa5de77fd6') in 0.009774 seconds
+  Import took 0.014304 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001072 seconds.
+Registered in 0.001104 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
@@ -556,160 +1678,111 @@ Mono: successfully reloaded assembly
 - Completed reload, in  0.941 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 112.8 MB.
-System memory in use after: 110.6 MB.
+Unloading 2438 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 117.9 MB.
+System memory in use after: 117.6 MB.
 
-Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2970.
-Total: 4.056600 ms (FindLiveObjects: 0.286400 ms CreateObjectMapping: 0.117000 ms MarkObjects: 2.056400 ms  DeleteObjects: 1.595900 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3210.
+Total: 3.291900 ms (FindLiveObjects: 0.287700 ms CreateObjectMapping: 0.125800 ms MarkObjects: 2.534800 ms  DeleteObjects: 0.342300 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001171 seconds.
+Registered in 0.001366 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.931 seconds
+- Completed reload, in  0.909 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 112.9 MB.
-System memory in use after: 110.7 MB.
-
-Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2973.
-Total: 3.586900 ms (FindLiveObjects: 0.278100 ms CreateObjectMapping: 0.114000 ms MarkObjects: 1.652900 ms  DeleteObjects: 1.540700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001069 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.953 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 112.9 MB.
-System memory in use after: 110.8 MB.
-
-Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2976.
-Total: 3.569000 ms (FindLiveObjects: 0.298900 ms CreateObjectMapping: 0.148000 ms MarkObjects: 1.800600 ms  DeleteObjects: 1.320700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 249.287115 seconds.
-  path: Assets/Shaders/ToonShader.shadergraph
-  artifactKey: Guid(60b3a18e9419ff34eb99ec4b868a8ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/ToonShader.shadergraph using Guid(60b3a18e9419ff34eb99ec4b868a8ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1eccc99e8181c2957bf254e8df31a6a') in 0.020006 seconds
-  Import took 0.025565 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001109 seconds.
-  path: Assets/Shaders/ToonShader.shadergraph
-  artifactKey: Guid(60b3a18e9419ff34eb99ec4b868a8ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/ToonShader.shadergraph using Guid(60b3a18e9419ff34eb99ec4b868a8ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1eccc99e8181c2957bf254e8df31a6a') in 0.006710 seconds
-  Import took 0.012387 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001275 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.934 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 113.0 MB.
-System memory in use after: 110.8 MB.
-
-Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2979.
-Total: 4.507000 ms (FindLiveObjects: 0.273300 ms CreateObjectMapping: 0.132000 ms MarkObjects: 2.355900 ms  DeleteObjects: 1.744700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001089 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.076 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 112.9 MB.
-System memory in use after: 110.8 MB.
+Unloading 2438 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 117.9 MB.
+System memory in use after: 117.6 MB.
 
-Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2982.
-Total: 4.272700 ms (FindLiveObjects: 0.577900 ms CreateObjectMapping: 0.427700 ms MarkObjects: 1.858300 ms  DeleteObjects: 1.407100 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3213.
+Total: 2.948700 ms (FindLiveObjects: 0.327800 ms CreateObjectMapping: 0.133800 ms MarkObjects: 2.048600 ms  DeleteObjects: 0.437600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.944193 seconds.
+  path: Assets/Scripts/Menu.cs
+  artifactKey: Guid(362d0e128228362458ac3352b4e869e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Menu.cs using Guid(362d0e128228362458ac3352b4e869e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01285e5ca6d4d1bc094c282816bbaafe') in 0.010382 seconds
+  Import took 0.019658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 76.223540 seconds.
+  path: Assets/_Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1fc836bd7a0f50d834bebc6f531c1f3') in 0.011588 seconds
+  Import took 0.031736 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001147 seconds.
+Registered in 0.001120 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.54 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.896 seconds
+- Completed reload, in  0.981 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2341 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 112.9 MB.
-System memory in use after: 110.7 MB.
+Unloading 2438 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 117.9 MB.
+System memory in use after: 117.6 MB.
 
-Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2985.
-Total: 3.471000 ms (FindLiveObjects: 0.374600 ms CreateObjectMapping: 0.153900 ms MarkObjects: 1.571500 ms  DeleteObjects: 1.369900 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3216.
+Total: 3.600700 ms (FindLiveObjects: 0.303200 ms CreateObjectMapping: 0.111100 ms MarkObjects: 2.812700 ms  DeleteObjects: 0.372200 ms)
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 4.619562 seconds.
+  path: Assets/_Scenes/Game.unity
+  artifactKey: Guid(262fe2c4b66cb444fa145ef950dc0149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Scenes/Game.unity using Guid(262fe2c4b66cb444fa145ef950dc0149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d13c308f0246fe4b84164d118a5c3d8') in 0.014197 seconds
+  Import took 0.017889 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001081 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.858 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2438 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 117.8 MB.
+System memory in use after: 117.5 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3219.
+Total: 2.488200 ms (FindLiveObjects: 0.298600 ms CreateObjectMapping: 0.109200 ms MarkObjects: 1.749800 ms  DeleteObjects: 0.329600 ms)
+
