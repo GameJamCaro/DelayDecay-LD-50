@@ -453,7 +453,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.54668033, g: 0.66793984, b: 0.8584906, a: 0}
+  m_BackGroundColor: {r: 0.064880736, g: 0.10554134, b: 0.16981131, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -838,15 +838,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: anti-aging
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 946db6e9d01fb854abd6cbac881f0d09, type: 2}
-  m_sharedMaterial: {fileID: -8991981116870500291, guid: 946db6e9d01fb854abd6cbac881f0d09, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 129abaddf17ef80429b2335c9885980b, type: 2}
+  m_sharedMaterial: {fileID: -4381785766886755908, guid: 129abaddf17ef80429b2335c9885980b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4280518552
+  m_fontColor: {r: 0.5943396, g: 0.5309139, b: 0.13737096, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -869,7 +869,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535

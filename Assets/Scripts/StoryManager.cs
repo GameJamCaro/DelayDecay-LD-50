@@ -29,6 +29,8 @@ public class StoryManager : MonoBehaviour
 
     string[] currentResults;
 
+    YouthManager youthManager;
+
    
 
 
@@ -36,6 +38,7 @@ public class StoryManager : MonoBehaviour
     {
         story = new Story(inkFiles[0].text);
         fortuneWheel.SetActive(false);
+        youthManager = GetComponent<YouthManager>();
     }
 
     private void Start()
@@ -90,8 +93,10 @@ public class StoryManager : MonoBehaviour
         StopAllCoroutines();
         fortuneWheel.SetActive(true);
         fortuneWheel.transform.GetChild(1).gameObject.SetActive(false);
+        fortuneWheel.transform.GetChild(2).gameObject.SetActive(false);
         diceText.text = "Wheel of fortune";
         currentResults = results1;
+        youthManager.LoseYouth(3);
 
     }
 
@@ -100,19 +105,23 @@ public class StoryManager : MonoBehaviour
 
         StopAllCoroutines();
         fortuneWheel.SetActive(true);
+        fortuneWheel.transform.GetChild(2).gameObject.SetActive(false);
         fortuneWheel.transform.GetChild(1).gameObject.SetActive(false);
         diceText.text = "Wheel of fortune";
         currentResults = results2;
+        youthManager.LoseYouth(5);
 
     }
 
     public void MakeChoice3()
     {
         StopAllCoroutines();
+        fortuneWheel.transform.GetChild(2).gameObject.SetActive(false);
         fortuneWheel.SetActive(true);
         fortuneWheel.transform.GetChild(1).gameObject.SetActive(false);
         diceText.text = "Wheel of fortune";
         currentResults = results3;
+        youthManager.LoseYouth(10);
 
     }
 
@@ -143,6 +152,7 @@ public class StoryManager : MonoBehaviour
 
     public void GoToMiniGame()
     {
+        PlayerPrefs.SetInt("YouthScore", youthManager.currentYouth);
         SceneManager.LoadScene(2);
     }
 }
