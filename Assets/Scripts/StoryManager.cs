@@ -21,11 +21,10 @@ public class StoryManager : MonoBehaviour
     public GameObject options;
     public GameObject fortuneWheel;
 
-    public GameObject[] buttons;
+   
 
-    public string[] results1;
-    public string[] results2;
-    public string[] results3;
+    public string[] locations;
+   
 
     string[] currentResults;
 
@@ -37,18 +36,20 @@ public class StoryManager : MonoBehaviour
     private void Awake()
     {
         story = new Story(inkFiles[0].text);
-        fortuneWheel.SetActive(false);
+       
         youthManager = GetComponent<YouthManager>();
     }
 
     private void Start()
     {
+        /*
         story.Continue();
         for (int i = 0; i < story.currentChoices.Count; i++)
         {
             buttons[i].SetActive(true);
             buttons[i].GetComponentInChildren<TextMeshProUGUI>().text = story.currentChoices[i].text;
         }
+        */
     }
 
     private void Update()
@@ -95,35 +96,14 @@ public class StoryManager : MonoBehaviour
         fortuneWheel.transform.GetChild(1).gameObject.SetActive(false);
         fortuneWheel.transform.GetChild(2).gameObject.SetActive(false);
         diceText.text = "Wheel of fortune";
-        currentResults = results1;
+      
         youthManager.LoseYouth(3);
 
     }
 
-    public void MakeChoice2()
-    {
+   
 
-        StopAllCoroutines();
-        fortuneWheel.SetActive(true);
-        fortuneWheel.transform.GetChild(2).gameObject.SetActive(false);
-        fortuneWheel.transform.GetChild(1).gameObject.SetActive(false);
-        diceText.text = "Wheel of fortune";
-        currentResults = results2;
-        youthManager.LoseYouth(5);
-
-    }
-
-    public void MakeChoice3()
-    {
-        StopAllCoroutines();
-        fortuneWheel.transform.GetChild(2).gameObject.SetActive(false);
-        fortuneWheel.SetActive(true);
-        fortuneWheel.transform.GetChild(1).gameObject.SetActive(false);
-        diceText.text = "Wheel of fortune";
-        currentResults = results3;
-        youthManager.LoseYouth(10);
-
-    }
+   
 
     IEnumerator RotateResults()
     {
@@ -133,16 +113,15 @@ public class StoryManager : MonoBehaviour
         {
            
             yield return wait;
-            fortuneWheel.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = currentResults[i];
+            fortuneWheel.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = locations[i];
 
-            if (i < results1.Length-1)
+            if (i < locations.Length-1)
                 i++;
             else
                 i = 0;
             
         }
-        yield return new WaitForSeconds(5);
-        fortuneWheel.transform.GetChild(2).gameObject.SetActive(true);
+       
 
 
 

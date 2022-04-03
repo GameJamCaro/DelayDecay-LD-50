@@ -43,10 +43,10 @@ public class HealthManager : MonoBehaviour
             HealthMeter.value = currentHealth;
         }
 
-        if (collision.CompareTag("Youth"))
+        if (collision.CompareTag("Health"))
         {
-            youthScore++;
-            score.text = "Nuggets of Youth: " +youthScore;
+            currentHealth++;
+            HealthMeter.value = currentHealth;
             Destroy(collision.gameObject);
         }
     }

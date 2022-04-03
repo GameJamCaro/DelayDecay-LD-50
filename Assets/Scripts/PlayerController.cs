@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     float verticalInput;
     public Sprite[] playerSprites;
     SpriteRenderer spriteRen;
+    public Animator anim;
+    float blinkSpeed;
+    float runSpeed = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +21,8 @@ public class PlayerController : MonoBehaviour
         tempPos = transform.position;
         spriteRen = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        StartCoroutine(BlinkRandomizer());
     }
 
     // Update is called once per frame
@@ -28,28 +33,56 @@ public class PlayerController : MonoBehaviour
 
         Vector3 direction = new Vector3(horizontalInput, verticalInput, 0).normalized;
         
-        if(horizontalInput == 0)
+        if(Input.GetKeyDown(KeyCode.E))
         {
-            spriteRen.sprite = playerSprites[0];
-            
-        }
-        else if(horizontalInput < 0.01f || verticalInput != 0)
-        {
-            spriteRen.sprite = playerSprites[1];
-            spriteRen.flipX = false;
-        }
-        else if (horizontalInput > 0.01f || verticalInput != 0)
-        {
-            spriteRen.sprite = playerSprites[1];
-            spriteRen.flipX = true;
+            anim.SetTrigger("interact");
         }
 
-       
-        
+
+        if(horizontalInput == 0  && verticalInput == 0)
+        { 
+            
+            anim.SetBool("running", false);
+            anim.SetBool("up", false);
+            anim.speed = blinkSpeed;
+
+        }
+        else if(horizontalInput < 0)
+        {
+            anim.SetBool("running", true);
+            anim.SetBool("up", false);
+            spriteRen.flipX = false;
+            anim.speed = runSpeed;
+        }
+        else if (horizontalInput > 0)
+        {
+            anim.SetBool("running", true);
+            anim.SetBool("up", false);
+            spriteRen.flipX = true;
+            anim.speed = runSpeed;
+        }
+        else if(verticalInput != 0)
+        {
+            anim.SetBool("up", true);
+            anim.SetBool("running", false);
+            anim.speed = runSpeed;
+        }
+        else
+            anim.speed = runSpeed;
+
+
+
+
 
         transform.Translate(direction * speed * Time.deltaTime);
 
 
        
+    }
+    IEnumerator BlinkRandomizer()
+    {
+        blinkSpeed = Random.Range(.5f, 5);
+        yield return new WaitForSeconds(5);
+        StartCoroutine(BlinkRandomizer());
     }
 }
