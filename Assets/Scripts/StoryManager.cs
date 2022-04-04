@@ -9,7 +9,8 @@ public class StoryManager : MonoBehaviour
 {
     public TextAsset[] inkFiles;
     public TMP_FontAsset[] fonts;
-    public TextMeshProUGUI eventText;
+    public TextMeshProUGUI godText;
+    public TextMeshProUGUI youText;
     public TextMeshProUGUI resultText;
 
     public int stageID;
@@ -21,6 +22,7 @@ public class StoryManager : MonoBehaviour
     public GameObject options;
     public GameObject fortuneWheel;
 
+    int lineCounter;
    
 
     public string[] locations;
@@ -42,48 +44,42 @@ public class StoryManager : MonoBehaviour
 
     private void Start()
     {
-        /*
-        story.Continue();
-        for (int i = 0; i < story.currentChoices.Count; i++)
-        {
-            buttons[i].SetActive(true);
-            buttons[i].GetComponentInChildren<TextMeshProUGUI>().text = story.currentChoices[i].text;
-        }
-        */
+        fortuneWheel.SetActive(false);
+
+     
     }
 
-    private void Update()
+    
+
+
+    public void ContinueConversation()
     {
-        /*
-        if(story.currentChoices.Count > 0)
+
+        if (story.canContinue)
         {
-            for (int i = 0; i < story.currentChoices.Count; i++)
+            lineCounter++;
+            if (lineCounter % 2 == 1)
             {
-                buttons[i].SetActive(true);
-                buttons[i].GetComponentInChildren<TextMeshProUGUI>().text = story.currentChoices[i].text;
+                godText.text = story.Continue();
             }
-            
+            else
+            {
+                youText.text = story.Continue();
+            }
         }
         else
-        {
-            options.SetActive(false);
             fortuneWheel.SetActive(true);
-        }
+
         
-        switch(stageID)
-        {
-            case 0:
-                eventText.font = fonts[stageID];
-                break;
-            
-        }
-        */
+
+
     }
 
+   
     public void RollDice()
     {
-        probabilty = Random.Range(10,30);
-        diceText.text = probabilty.ToString();
+        probabilty = Random.Range(15,30);
+        diceText.text = "Your lucky number is " + probabilty;
         fortuneWheel.transform.GetChild(1).gameObject.SetActive(true);
         StartCoroutine(RotateResults());
 
@@ -108,18 +104,34 @@ public class StoryManager : MonoBehaviour
     IEnumerator RotateResults()
     {
         int i = 0;
-        WaitForSeconds wait = new WaitForSeconds(.4f);
+        float waitTime = .7f;
+        bool once = false;
+        bool once1 = false;
+        bool once2 = false;
         for (int j = 0; j < probabilty; j++)
         {
-           
-            yield return wait;
+            yield return new WaitForSeconds(waitTime);
             fortuneWheel.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = locations[i];
 
             if (i < locations.Length-1)
                 i++;
             else
                 i = 0;
-            
+            if(j > probabilty / 10 && !once)
+            {
+                waitTime -= .2f;
+                once = true;
+            }
+            if (j > probabilty /5 && !once1)
+            {
+                waitTime -= .2f;
+                once1 = true;
+            }
+            if(j > (probabilty /4)*3 && !once2) 
+            {
+                waitTime = .7f;
+                once2 = true;
+            }
         }
        
 
