@@ -6,6 +6,14 @@ using UnityEngine.SceneManagement;
 public class Door : MonoBehaviour
 {
     bool atDoor;
+    SpriteRenderer spriteRen;
+    public Sprite[] doorSprites;
+
+    private void Start()
+    {
+        spriteRen = GetComponent<SpriteRenderer>();
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && atDoor)
@@ -20,6 +28,7 @@ public class Door : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             atDoor = true;
+            spriteRen.sprite = doorSprites[1];
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -27,6 +36,7 @@ public class Door : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             atDoor = false;
+            spriteRen.sprite = doorSprites[0];
         }
     }
 

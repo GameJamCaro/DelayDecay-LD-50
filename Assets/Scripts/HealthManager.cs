@@ -10,14 +10,35 @@ public class HealthManager : MonoBehaviour
     public int currentHealth;
     public Slider HealthMeter;
     public GameObject lostPanel;
-    int youthScore;
-    public TextMeshProUGUI score;
+    bool atBunny;
+    GameObject currentBunny;
+   
+    public int rabitScore;
+    public Image[] rabitIcons;
+    public Color atColor;
 
 
     private void Start()
     {
+        ClearRabitIcons();
+
         currentHealth = maxHealth;
         HealthMeter.value = currentHealth;
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.E) && atBunny)
+        {
+            rabitScore++;
+            ClearRabitIcons();
+            for (int i = 0; i < rabitScore; i++)
+            {
+                rabitIcons[i].enabled = true;
+            }
+
+            Destroy(currentBunny);
+        }
     }
 
 
@@ -34,7 +55,7 @@ public class HealthManager : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.CompareTag("Enemy"))
         {
@@ -48,6 +69,38 @@ public class HealthManager : MonoBehaviour
             currentHealth++;
             HealthMeter.value = currentHealth;
             Destroy(collision.gameObject);
+        }
+
+        if (collision.CompareTag("Rabit"))
+        {
+            atBunny = true;
+            currentBunny = collision.gameObject;
+            currentBunny.GetComponent<SpriteRenderer>().color = atColor;
+        }
+
+        
+
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Rabit"))
+        {
+            atBunny = false;
+           
+            collision.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+
+        }
+    }
+
+    
+
+
+    void ClearRabitIcons()
+    {
+        foreach (Image icon in rabitIcons)
+        {
+            icon.enabled = false;
         }
     }
 }
