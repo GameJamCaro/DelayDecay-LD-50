@@ -11,6 +11,10 @@ public class StoryManager : MonoBehaviour
     public TMP_FontAsset[] fonts;
     public TextMeshProUGUI godText;
     public TextMeshProUGUI youText;
+    AudioSource audioSource;
+    public AudioClip[] talkSounds;
+    public AudioClip coinSound;
+
     public TextMeshProUGUI resultText;
 
     public int stageID;
@@ -32,6 +36,10 @@ public class StoryManager : MonoBehaviour
 
     YouthManager youthManager;
 
+    string currentText;
+
+
+
    
 
 
@@ -45,6 +53,7 @@ public class StoryManager : MonoBehaviour
     private void Start()
     {
         fortuneWheel.SetActive(false);
+        audioSource = GetComponent<AudioSource>();
 
      
     }
@@ -58,13 +67,20 @@ public class StoryManager : MonoBehaviour
         if (story.canContinue)
         {
             lineCounter++;
+            currentText = story.Continue();
+           
             if (lineCounter % 2 == 1)
             {
-                godText.text = story.Continue();
+                
+                
+                StartCoroutine(TypeSentence(currentText, godText,0));
+
             }
             else
             {
-                youText.text = story.Continue();
+                
+                
+                StartCoroutine(TypeSentence(currentText, youText,1));
             }
         }
         else
@@ -76,10 +92,36 @@ public class StoryManager : MonoBehaviour
 
     }
 
-   
+    public IEnumerator TypeSentence(string sentence, TextMeshProUGUI textElement, int talkerID)
+    {
+        textElement.text = "";
+        
+        foreach (char letter in sentence.ToCharArray())
+        {
+            if(talkerID == 0)
+            {
+                audioSource.clip = talkSounds[0];
+            }
+            else
+            {
+                audioSource.clip = talkSounds[Random.Range(1, 3)];
+            }
+
+            audioSource.pitch = Random.Range(.8f, 1.2f);
+            audioSource.Play();
+            textElement.text += letter;
+            float time = Random.Range(0.05f, 0.1f);
+            yield return new WaitForSeconds(time);
+        }
+    }
+
+
     public void RollDice()
     {
-        probabilty = Random.Range(15,30);
+        audioSource.clip = coinSound;
+        audioSource.loop = true;
+        audioSource.Play();
+        probabilty = Random.Range(10,31);
         diceText.text = "Your lucky number is " + probabilty;
         fortuneWheel.transform.GetChild(1).gameObject.SetActive(true);
         StartCoroutine(RotateResults());
@@ -134,6 +176,8 @@ public class StoryManager : MonoBehaviour
                 once2 = true;
             }
         }
+        audioSource.loop = false;
+        audioSource.Stop();
        
 
 

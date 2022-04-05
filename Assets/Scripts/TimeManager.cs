@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class TimeManager : MonoBehaviour
 {
@@ -35,7 +36,11 @@ public class TimeManager : MonoBehaviour
     }
 
     
-
+    public void ResetStage()
+    {
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
     
 
     IEnumerator CountDown()

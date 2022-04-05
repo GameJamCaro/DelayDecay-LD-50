@@ -9,4 +9,10 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("World");
     }
+
+    public void ResetPrefs()
+    {
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
