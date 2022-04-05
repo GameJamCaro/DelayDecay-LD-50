@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     float verticalInput;
     public Sprite[] playerSprites;
     SpriteRenderer spriteRen;
-    public Animator anim;
+    Animator anim;
     float blinkSpeed;
     float runSpeed = 2;
 
@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E))
         {
             anim.SetTrigger("interact");
+            anim.speed = runSpeed;
         }
 
 
@@ -81,7 +82,7 @@ public class PlayerController : MonoBehaviour
     }
     IEnumerator BlinkRandomizer()
     {
-        blinkSpeed = Random.Range(.5f, 5);
+        blinkSpeed = Random.Range(.5f, 3);
         yield return new WaitForSeconds(5);
         StartCoroutine(BlinkRandomizer());
     }

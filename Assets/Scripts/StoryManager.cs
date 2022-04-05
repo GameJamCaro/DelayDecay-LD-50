@@ -68,9 +68,10 @@ public class StoryManager : MonoBehaviour
             }
         }
         else
+        {
             fortuneWheel.SetActive(true);
-
-        
+            PlayerPrefs.SetInt("Stage", PlayerPrefs.GetInt("Stage") + 1);
+        }
 
 
     }
@@ -141,9 +142,9 @@ public class StoryManager : MonoBehaviour
 
     }
 
-    public void GoToMiniGame()
+    public void GoToGame()
     {
-        PlayerPrefs.SetInt("YouthScore", youthManager.currentYouth);
-        SceneManager.LoadScene(2);
+       
+        SceneManager.LoadScene("World");
     }
 }

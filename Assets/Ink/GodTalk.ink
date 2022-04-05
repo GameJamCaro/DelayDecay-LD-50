@@ -17,15 +17,20 @@ You are here to quench my infinite thirst for love by fetching me bunny hearts.
 Why should I?
 
 //God
-Because the world will rapidly decay before your watery eyes if you don't.
+Because the world will rapidly decay in front of your watery eyes if you don't.
 
 //Greeny
 Hm, about how many bunny hearts are we takling here?
 
 //God
-You'll see just go and fetch some -\> NOW !
+You'll see just go and fetch some -\> NOW ! You're time is limited. 
 
+// Greeny
+...
+
+//God
+When time is up you have to be back in my shrine.
 
 //Greeny
-I guess I have no choice. Where do I get them?
+I guess I have no choice. Where do I get the bunnies?
 

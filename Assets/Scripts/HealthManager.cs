@@ -37,7 +37,7 @@ public class HealthManager : MonoBehaviour
                 rabitIcons[i].enabled = true;
             }
 
-            Destroy(currentBunny);
+            Destroy(currentBunny, .5f);
         }
     }
 
