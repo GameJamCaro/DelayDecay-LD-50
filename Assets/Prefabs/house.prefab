@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 171199194397572468}
   - component: {fileID: 171199194397572469}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: house
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 171199194397572474}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -38.2, y: 43.93, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3808e1dd439fa3046a7591578bda7b9a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 798122f562651b942b5b81865e78d7bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
