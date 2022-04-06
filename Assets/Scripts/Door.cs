@@ -7,7 +7,8 @@ public class Door : MonoBehaviour
 {
     bool atDoor;
     SpriteRenderer spriteRen;
-    public Sprite[] doorSprites;
+    public Color activeColor;
+   
 
     private void Start()
     {
@@ -28,7 +29,7 @@ public class Door : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             atDoor = true;
-            spriteRen.sprite = doorSprites[1];
+            spriteRen.color = activeColor;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -36,7 +37,7 @@ public class Door : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             atDoor = false;
-            spriteRen.sprite = doorSprites[0];
+            spriteRen.color = Color.white;
         }
     }
 
