@@ -350,7 +350,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press O to zoom out
+  m_text: Hold down O to zoom out
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 946db6e9d01fb854abd6cbac881f0d09, type: 2}
   m_sharedMaterial: {fileID: -8991981116870500291, guid: 946db6e9d01fb854abd6cbac881f0d09, type: 2}
