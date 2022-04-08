@@ -45,6 +45,7 @@ public class Door : MonoBehaviour
 
     IEnumerator WaitAndEnter()
     {
+        PlayerPrefs.SetInt("Health", healthManager.currentHealth);
         yield return new WaitForSeconds(.5f);
         SceneManager.LoadScene("Shrine");
     }

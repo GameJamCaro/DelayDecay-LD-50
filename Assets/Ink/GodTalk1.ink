@@ -23,10 +23,10 @@ When I eat them I too become adorable too.
 Are you sure about that? I think eating bunny hearts makes you not at all adorable.
 
 //God
-I did not ask you for your opinion. Go get me more. Because of your rudeness, your time will be eaven more limited, this time. 
+I did not ask you for your opinion. Because of your rudeness, your time will be eaven more limited. 
 
 //Greeny 
 What?
 
 //God
-Do not make me upset. Trust me - you do want me to become upset. Ask the oracle and go!
+Do not make me upset. Trust me - you do want me to become upset. Ask the oracle and get me more bunnies!

@@ -23,8 +23,11 @@ public class HealthManager : MonoBehaviour
     private void Start()
     {
         ClearRabitIcons();
+        if (!PlayerPrefs.HasKey("Health"))
+            currentHealth = maxHealth;
+        else
+            currentHealth = PlayerPrefs.GetInt("Health");
 
-        currentHealth = maxHealth;
         HealthMeter.value = currentHealth;
     }
 

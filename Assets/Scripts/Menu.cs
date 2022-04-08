@@ -7,8 +7,11 @@ public class Menu : MonoBehaviour
 {
     public void LoadGame()
     {
+        ResetPrefs();
         SceneManager.LoadScene("World");
     }
+
+
 
     public void ResetPrefs()
     {

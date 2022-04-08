@@ -8,7 +8,7 @@ public class DogMovement : MonoBehaviour
     Vector2 tempPos;
 
     public float speedLimit = 3;
-    float mainSpeed;
+    float mainSpeed = 1;
     float speed;
     float speed1;
 

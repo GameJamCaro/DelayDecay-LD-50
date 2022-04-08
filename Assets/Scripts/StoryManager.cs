@@ -43,6 +43,9 @@ public class StoryManager : MonoBehaviour
 
     public GameObject exit;
 
+    public GameObject dialogPanel;
+    public GameObject endPanel;
+
     
 
 
@@ -99,6 +102,12 @@ public class StoryManager : MonoBehaviour
         {
             fortuneWheel.SetActive(true);
             talkOver = true;
+
+            if (PlayerPrefs.GetInt("Stage") == 2)
+            {
+                dialogPanel.SetActive(false);
+                endPanel.SetActive(true);
+            }
            
         }
 
@@ -196,9 +205,10 @@ public class StoryManager : MonoBehaviour
 
     public void GoToGame()
     {
-        if(talkOver)
+        if (talkOver)
             PlayerPrefs.SetInt("Stage", PlayerPrefs.GetInt("Stage") + 1);
-        
+
+
         SceneManager.LoadScene("World");
     }
 }
