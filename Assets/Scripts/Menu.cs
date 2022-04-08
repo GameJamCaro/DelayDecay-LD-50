@@ -15,4 +15,9 @@ public class Menu : MonoBehaviour
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    private void OnApplicationQuit()
+    {
+        ResetPrefs();
+    }
 }

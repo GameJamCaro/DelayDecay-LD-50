@@ -39,19 +39,23 @@ public class StoryManager : MonoBehaviour
     string currentText;
 
 
+    bool talkOver;
+
+    public GameObject exit;
+
+    
+
+
 
    
 
 
-    private void Awake()
-    {
-        story = new Story(inkFiles[0].text);
-       
-        youthManager = GetComponent<YouthManager>();
-    }
 
     private void Start()
     {
+        
+        story = new Story(inkFiles[PlayerPrefs.GetInt("Stage")].text);
+
         fortuneWheel.SetActive(false);
         audioSource = GetComponent<AudioSource>();
 
@@ -67,26 +71,35 @@ public class StoryManager : MonoBehaviour
         if (story.canContinue)
         {
             lineCounter++;
-            currentText = story.Continue();
+            
            
             if (lineCounter % 2 == 1)
             {
+                StopAllCoroutines();
+
+                if(lineCounter > 1)
+                   youText.text = currentText;
                 
-                
+                currentText = "";
+                currentText = story.Continue();
                 StartCoroutine(TypeSentence(currentText, godText,0));
 
             }
             else
             {
-                
-                
+                StopAllCoroutines();
+
+                godText.text = currentText;
+                currentText = "";
+                currentText = story.Continue();
                 StartCoroutine(TypeSentence(currentText, youText,1));
             }
         }
         else
         {
             fortuneWheel.SetActive(true);
-            PlayerPrefs.SetInt("Stage", PlayerPrefs.GetInt("Stage") + 1);
+            talkOver = true;
+           
         }
 
 
@@ -128,17 +141,7 @@ public class StoryManager : MonoBehaviour
 
     }
 
-    public void MakeChoice1()
-    {
-        StopAllCoroutines();
-        fortuneWheel.SetActive(true);
-        fortuneWheel.transform.GetChild(1).gameObject.SetActive(false);
-        fortuneWheel.transform.GetChild(2).gameObject.SetActive(false);
-        diceText.text = "Wheel of fortune";
-      
-        youthManager.LoseYouth(3);
-
-    }
+   
 
    
 
@@ -154,31 +157,36 @@ public class StoryManager : MonoBehaviour
         for (int j = 0; j < probabilty; j++)
         {
             yield return new WaitForSeconds(waitTime);
-            fortuneWheel.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = locations[i];
-
+           
+          
             if (i < locations.Length-1)
                 i++;
             else
                 i = 0;
-            if(j > probabilty / 10 && !once)
+            if(j > probabilty/10 && !once)
             {
                 waitTime -= .2f;
                 once = true;
             }
-            if (j > probabilty /5 && !once1)
+            if (j > probabilty/5 && !once1)
             {
                 waitTime -= .2f;
                 once1 = true;
             }
-            if(j > (probabilty /4)*3 && !once2) 
+            if(j > (probabilty /5)*4 && !once2) 
             {
                 waitTime = .7f;
                 once2 = true;
             }
+            fortuneWheel.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = locations[i];
         }
+        PlayerPrefs.SetInt("LocationID", i);
         audioSource.loop = false;
         audioSource.Stop();
+        exit.SetActive(true);
        
+
+
 
 
 
@@ -188,7 +196,9 @@ public class StoryManager : MonoBehaviour
 
     public void GoToGame()
     {
-       
+        if(talkOver)
+            PlayerPrefs.SetInt("Stage", PlayerPrefs.GetInt("Stage") + 1);
+        
         SceneManager.LoadScene("World");
     }
 }

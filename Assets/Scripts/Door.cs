@@ -8,6 +8,7 @@ public class Door : MonoBehaviour
     bool atDoor;
     SpriteRenderer spriteRen;
     public Color activeColor;
+    public HealthManager healthManager;
    
 
     private void Start()
@@ -19,6 +20,7 @@ public class Door : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && atDoor)
         {
+            if(PlayerPrefs.GetInt("Stage") == 0 || healthManager.rabitScore == 5)
             StartCoroutine(WaitAndEnter());
         }
     }
@@ -26,7 +28,7 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if(collision.CompareTag("Player") && (PlayerPrefs.GetInt("Stage") == 0 || healthManager.rabitScore == 5))
         {
             atDoor = true;
             spriteRen.color = activeColor;
@@ -43,7 +45,7 @@ public class Door : MonoBehaviour
 
     IEnumerator WaitAndEnter()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(.5f);
         SceneManager.LoadScene("Shrine");
     }
 

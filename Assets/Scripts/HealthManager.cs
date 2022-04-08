@@ -17,6 +17,8 @@ public class HealthManager : MonoBehaviour
     public Image[] rabitIcons;
     public Color atColor;
 
+    bool hurt;
+
 
     private void Start()
     {
@@ -37,7 +39,7 @@ public class HealthManager : MonoBehaviour
                 rabitIcons[i].enabled = true;
             }
 
-            Destroy(currentBunny, .5f);
+            Destroy(currentBunny);
         }
     }
 
@@ -46,7 +48,7 @@ public class HealthManager : MonoBehaviour
     {
         if (currentHealth < 1)
         {
-            //lostPanel.SetActive(true);
+            lostPanel.SetActive(true);
         }
         else
         {
@@ -59,22 +61,31 @@ public class HealthManager : MonoBehaviour
     {
         if(collision.CompareTag("Enemy"))
         {
-            Debug.Log(currentHealth);
-            LoseHealth(1);
-            HealthMeter.value = currentHealth;
+            if (!hurt)
+            {
+                Debug.Log(currentHealth);
+                LoseHealth(1);
+                HealthMeter.value = currentHealth;
+                hurt = true;
+                StartCoroutine(ResetHurt());
+            }
         }
 
         if (collision.CompareTag("Health"))
         {
-            currentHealth++;
-            HealthMeter.value = currentHealth;
-            Destroy(collision.gameObject);
+            if (currentHealth < maxHealth)
+            {
+                currentHealth++;
+                HealthMeter.value = currentHealth;
+                Destroy(collision.gameObject);
+            }
         }
 
         if (collision.CompareTag("Rabit"))
         {
             atBunny = true;
             currentBunny = collision.gameObject;
+            
             currentBunny.GetComponent<SpriteRenderer>().color = atColor;
         }
 
@@ -102,5 +113,11 @@ public class HealthManager : MonoBehaviour
         {
             icon.enabled = false;
         }
+    }
+
+    IEnumerator ResetHurt()
+    {
+        yield return new WaitForSeconds(2);
+        hurt = false;
     }
 }

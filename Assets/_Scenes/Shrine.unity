@@ -477,7 +477,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &290022955
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2643,6 +2643,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inkFiles:
   - {fileID: 4900000, guid: c035e190c7a19004a80fedcd5677365b, type: 3}
+  - {fileID: 4900000, guid: 106cd259c1873e94e81ca7fedd726b6d, type: 3}
+  - {fileID: 4900000, guid: 2720f6210866c9b409c30a39f2348e87, type: 3}
   fonts: []
   godText: {fileID: 417207982}
   youText: {fileID: 568835206}
@@ -2661,6 +2663,7 @@ MonoBehaviour:
   - in forest
   - at logings
   - at lake
+  exit: {fileID: 290022954}
 --- !u!82 &1250413063
 AudioSource:
   m_ObjectHideFlags: 0

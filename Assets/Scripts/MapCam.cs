@@ -14,12 +14,12 @@ public class MapCam : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.M))
+        if(Input.GetKeyDown(KeyCode.O))
         {
             cam.gameObject.SetActive(true);
         }
 
-        if (Input.GetKeyUp(KeyCode.M))
+        if (Input.GetKeyUp(KeyCode.O))
         {
             cam.gameObject.SetActive(false);
         }
