@@ -6,16 +6,22 @@ public class DogMovement : MonoBehaviour
 {
     Vector2 startPos;
     Vector2 tempPos;
+    SpriteRenderer ren;
 
     public float speedLimit = 3;
     float mainSpeed = 1;
     float speed;
     float speed1;
+    GameObject player;
+    bool closeToPlayer;
+    float stepSpeed = 5.0f;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+        ren = GetComponentInChildren<SpriteRenderer>();
         tempPos = startPos = transform.position;
         StartCoroutine(Drifting());
     }
@@ -23,18 +29,42 @@ public class DogMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        tempPos.x += (2 * Time.deltaTime * speed * mainSpeed);
-        tempPos.y += (2 * Time.deltaTime * speed1 * mainSpeed);
-        transform.position = tempPos;
-
-        if(speed > 0)
+        if (!closeToPlayer)
         {
-            GetComponentInChildren<SpriteRenderer>().flipX = true;
+            tempPos.x += (2 * Time.deltaTime * speed * mainSpeed);
+            tempPos.y += (2 * Time.deltaTime * speed1 * mainSpeed);
+            transform.position = tempPos;
+
+            if (speed > 0)
+            {
+                ren.flipX = true;
+            }
+            else
+                ren.flipX = false;
         }
         else
-            GetComponentInChildren<SpriteRenderer>().flipX = false;
+        {
+            float step = stepSpeed * Time.deltaTime;
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position,step);
+        }
 
+        if (Vector2.Distance(transform.position, player.transform.position) < 10)
+        {
+            closeToPlayer = true;
+            if (transform.position.x > player.transform.position.x)
+            {
+                ren.flipX = false;
+            }
+            else
+                ren.flipX = true;
+        }
+        else
+        {
+            tempPos = transform.position;
+            closeToPlayer = false;
+        }
     }
+    
 
 
     IEnumerator Drifting()

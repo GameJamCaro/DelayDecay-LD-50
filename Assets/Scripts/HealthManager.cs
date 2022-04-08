@@ -120,7 +120,7 @@ public class HealthManager : MonoBehaviour
 
     IEnumerator ResetHurt()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         hurt = false;
     }
 }
