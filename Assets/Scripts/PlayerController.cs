@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     float blinkSpeed;
     float runSpeed = 2;
 
-    // Start is called before the first frame update
+   
     void Start()
     {
         tempPos = transform.position;
@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(BlinkRandomizer());
     }
 
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
@@ -71,15 +71,11 @@ public class PlayerController : MonoBehaviour
         else
             anim.speed = runSpeed;
 
-
-
-
-
         transform.Translate(direction * speed * Time.deltaTime);
-
-
-       
     }
+
+
+
     IEnumerator BlinkRandomizer()
     {
         blinkSpeed = Random.Range(.5f, 3);

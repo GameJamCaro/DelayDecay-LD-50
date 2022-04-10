@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class HealthManager : MonoBehaviour
 {
@@ -20,11 +19,20 @@ public class HealthManager : MonoBehaviour
     bool hurt;
 
 
+    AudioSource audioSource;
+
+    public AudioClip hurtSound;
+    public AudioClip healthSound;
+     
+
+
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
         ClearRabitIcons();
         if (!PlayerPrefs.HasKey("Health"))
-            currentHealth = maxHealth;
+            currentHealth = 5;
         else
             currentHealth = PlayerPrefs.GetInt("Health");
 
@@ -41,7 +49,6 @@ public class HealthManager : MonoBehaviour
             {
                 rabitIcons[i].enabled = true;
             }
-
             Destroy(currentBunny);
         }
     }
@@ -57,6 +64,8 @@ public class HealthManager : MonoBehaviour
         {
             currentHealth -= amount;
             HealthMeter.value = currentHealth;
+            audioSource.clip = hurtSound;
+            audioSource.Play();
         }
     }
 
@@ -79,6 +88,8 @@ public class HealthManager : MonoBehaviour
             if (currentHealth < maxHealth)
             {
                 currentHealth++;
+                audioSource.clip = healthSound;
+                audioSource.Play();
                 HealthMeter.value = currentHealth;
                 Destroy(collision.gameObject);
             }
@@ -91,9 +102,6 @@ public class HealthManager : MonoBehaviour
             
             currentBunny.GetComponent<SpriteRenderer>().color = atColor;
         }
-
-        
-
     }
 
     private void OnTriggerExit2D(Collider2D collision)

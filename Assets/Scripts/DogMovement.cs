@@ -36,9 +36,7 @@ public class DogMovement : MonoBehaviour
             transform.position = tempPos;
 
             if (speed > 0)
-            {
-                ren.flipX = true;
-            }
+                 ren.flipX = true;
             else
                 ren.flipX = false;
         }
@@ -70,11 +68,11 @@ public class DogMovement : MonoBehaviour
     IEnumerator Drifting()
     {
         speed = Random.Range(-speedLimit,speedLimit);
-        speed1 = Random.Range(-speedLimit, speedLimit); ;
-        yield return new WaitForSeconds(Random.Range(3, 6));
-        speed1 = Random.Range(-speedLimit, speedLimit); ;
-        speed = Random.Range(-speedLimit, speedLimit); ;
-        yield return new WaitForSeconds(Random.Range(5, 8));
+        speed1 = Random.Range(-speedLimit, speedLimit); 
+        yield return new WaitForSeconds(Random.Range(3,6));
+        speed1 = Random.Range(-speedLimit, speedLimit);
+        speed = Random.Range(-speedLimit, speedLimit);
+        yield return new WaitForSeconds(Random.Range(5,8));
         StartCoroutine(Drifting());
 
     }

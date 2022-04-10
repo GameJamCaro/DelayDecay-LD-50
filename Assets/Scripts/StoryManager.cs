@@ -16,7 +16,6 @@ public class StoryManager : MonoBehaviour
     public AudioClip coinSound;
 
     public TextMeshProUGUI resultText;
-
     public int stageID;
 
     Story story;
@@ -27,15 +26,9 @@ public class StoryManager : MonoBehaviour
     public GameObject fortuneWheel;
 
     int lineCounter;
-   
 
     public string[] locations;
    
-
-    string[] currentResults;
-
-    YouthManager youthManager;
-
     string currentText;
 
 
@@ -46,23 +39,14 @@ public class StoryManager : MonoBehaviour
     public GameObject dialogPanel;
     public GameObject endPanel;
 
-    
-
-
-
-   
-
 
 
     private void Start()
     {
-        
         story = new Story(inkFiles[PlayerPrefs.GetInt("Stage")].text);
 
         fortuneWheel.SetActive(false);
         audioSource = GetComponent<AudioSource>();
-
-     
     }
 
     
@@ -74,8 +58,6 @@ public class StoryManager : MonoBehaviour
         if (story.canContinue)
         {
             lineCounter++;
-            
-           
             if (lineCounter % 2 == 1)
             {
                 StopAllCoroutines();
@@ -86,7 +68,6 @@ public class StoryManager : MonoBehaviour
                 currentText = "";
                 currentText = story.Continue();
                 StartCoroutine(TypeSentence(currentText, godText,0));
-
             }
             else
             {
@@ -108,10 +89,7 @@ public class StoryManager : MonoBehaviour
                 dialogPanel.SetActive(false);
                 endPanel.SetActive(true);
             }
-           
         }
-
-
     }
 
     public IEnumerator TypeSentence(string sentence, TextMeshProUGUI textElement, int talkerID)
@@ -140,6 +118,8 @@ public class StoryManager : MonoBehaviour
 
     public void RollDice()
     {
+        StopAllCoroutines();
+        youText.text = currentText;
         audioSource.clip = coinSound;
         audioSource.loop = true;
         audioSource.Play();
@@ -147,7 +127,6 @@ public class StoryManager : MonoBehaviour
         diceText.text = "Your lucky number is " + probabilty;
         fortuneWheel.transform.GetChild(1).gameObject.SetActive(true);
         StartCoroutine(RotateResults());
-
     }
 
    

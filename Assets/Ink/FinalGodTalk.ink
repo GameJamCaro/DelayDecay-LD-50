@@ -5,7 +5,7 @@ Give me the bunnies!
 You will never become adorable if you remain so cruel!
 
 //God
-You know nothing, your just a greeny, Greeny!
+You know nothing, you're just a greeny, Greeny!
 
 //greeny
 I might be a greeny, but I know that your demands are in vain.
@@ -23,4 +23,4 @@ Hm, and what am I supposed to do instead?
 Just take it easy!
 
 //God
-Hm, Maybe your right :)
+Hm, Maybe you're right :)

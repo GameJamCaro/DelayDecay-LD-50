@@ -77,7 +77,7 @@ namespace Ink.UnityIntegration {
 
         public DefaultAsset defaultJsonAssetPath;
 
-        public bool compileAutomatically = true;
+        public bool compileAutomatically = false;
 		public bool delayInPlayMode = true;
 		public bool handleJSONFilesAutomatically = true;
 

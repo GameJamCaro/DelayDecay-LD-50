@@ -19,12 +19,9 @@ public class TimeManager : MonoBehaviour
     public GameObject decayPanel;
     
 
-    // Start is called before the first frame update
+   
     void Start()
     {
-
-        Debug.Log("Location: " + PlayerPrefs.GetInt("LocationID"));
-        Debug.Log("Stage: " + PlayerPrefs.GetInt("Stage"));
         if (PlayerPrefs.HasKey("Stage"))
         {
             if (PlayerPrefs.GetInt("Stage") == 1)
@@ -36,8 +33,7 @@ public class TimeManager : MonoBehaviour
             {
                 tempTime = 30;
             }
-           
-
+ 
             if (PlayerPrefs.GetInt("Stage") > 0)
             {
                 timeText.text = tempTime + " seconds";
@@ -67,9 +63,8 @@ public class TimeManager : MonoBehaviour
             {
             StartCoroutine(TimesUp());
             }
-
-
     }
+
 
     private IEnumerator TimesUp()
     {

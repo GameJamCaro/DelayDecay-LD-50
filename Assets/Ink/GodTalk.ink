@@ -23,7 +23,7 @@ Because the world will rapidly decay in front of your watery eyes if you don't.
 Hm, about how many bunny hearts are we takling here?
 
 //God
-You'll see just go and fetch some -\> NOW ! You're time is limited. 
+You'll see just go and fetch some -\> NOW ! Your time is limited. 
 
 // Greeny
 ...
