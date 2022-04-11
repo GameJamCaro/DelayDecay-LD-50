@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 1;
     float horizontalInput;
     float verticalInput;
-    public Sprite[] playerSprites;
+  
     SpriteRenderer spriteRen;
     Animator anim;
     float blinkSpeed;
@@ -44,30 +44,32 @@ public class PlayerController : MonoBehaviour
         { 
             
             anim.SetBool("running", false);
-            anim.SetBool("up", false);
+          //  anim.SetBool("up", false);
             anim.speed = blinkSpeed;
 
         }
         else if(horizontalInput < 0)
         {
             anim.SetBool("running", true);
-            anim.SetBool("up", false);
+         //   anim.SetBool("up", false);
             spriteRen.flipX = false;
             anim.speed = runSpeed;
         }
         else if (horizontalInput > 0)
         {
             anim.SetBool("running", true);
-            anim.SetBool("up", false);
+         //   anim.SetBool("up", false);
             spriteRen.flipX = true;
             anim.speed = runSpeed;
         }
+       
         else if(verticalInput != 0)
         {
-            anim.SetBool("up", true);
-            anim.SetBool("running", false);
+         //   anim.SetBool("up", true);
+            anim.SetBool("running", true);
             anim.speed = runSpeed;
         }
+       
         else
             anim.speed = runSpeed;
 

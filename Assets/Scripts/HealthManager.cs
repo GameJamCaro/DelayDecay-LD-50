@@ -32,7 +32,7 @@ public class HealthManager : MonoBehaviour
 
         ClearRabitIcons();
         if (!PlayerPrefs.HasKey("Health"))
-            currentHealth = 5;
+            currentHealth = 7;
         else
             currentHealth = PlayerPrefs.GetInt("Health");
 

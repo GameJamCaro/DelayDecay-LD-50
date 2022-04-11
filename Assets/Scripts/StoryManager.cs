@@ -24,6 +24,7 @@ public class StoryManager : MonoBehaviour
 
     public GameObject options;
     public GameObject fortuneWheel;
+    public GameObject continueButton;
 
     int lineCounter;
 
@@ -83,10 +84,12 @@ public class StoryManager : MonoBehaviour
         {
             fortuneWheel.SetActive(true);
             talkOver = true;
+            continueButton.SetActive(false);
 
             if (PlayerPrefs.GetInt("Stage") == 2)
             {
-                dialogPanel.SetActive(false);
+                fortuneWheel.SetActive(false);
+               
                 endPanel.SetActive(true);
             }
         }
@@ -115,18 +118,23 @@ public class StoryManager : MonoBehaviour
         }
     }
 
+    bool once;
 
     public void RollDice()
     {
-        StopAllCoroutines();
-        youText.text = currentText;
-        audioSource.clip = coinSound;
-        audioSource.loop = true;
-        audioSource.Play();
-        probabilty = Random.Range(10,31);
-        diceText.text = "Your lucky number is " + probabilty;
-        fortuneWheel.transform.GetChild(1).gameObject.SetActive(true);
-        StartCoroutine(RotateResults());
+        if (!once)
+        {
+            StopAllCoroutines();
+            youText.text = currentText;
+            audioSource.clip = coinSound;
+            audioSource.loop = true;
+            audioSource.Play();
+            probabilty = Random.Range(10, 20);
+            diceText.text = "Your lucky number is " + probabilty;
+            fortuneWheel.transform.GetChild(1).gameObject.SetActive(true);
+            StartCoroutine(RotateResults());
+            once = true;
+        }
     }
 
    
@@ -138,7 +146,7 @@ public class StoryManager : MonoBehaviour
     IEnumerator RotateResults()
     {
         int i = 0;
-        float waitTime = .7f;
+        float waitTime = .5f;
         bool once = false;
         bool once1 = false;
         bool once2 = false;
@@ -158,12 +166,12 @@ public class StoryManager : MonoBehaviour
             }
             if (j > probabilty/5 && !once1)
             {
-                waitTime -= .2f;
+                waitTime -= .1f;
                 once1 = true;
             }
             if(j > (probabilty /5)*4 && !once2) 
             {
-                waitTime = .7f;
+                waitTime = .5f;
                 once2 = true;
             }
             fortuneWheel.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = locations[i];
