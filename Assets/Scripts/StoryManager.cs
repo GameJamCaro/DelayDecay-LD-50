@@ -4,6 +4,7 @@ using UnityEngine;
 using Ink.Runtime;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class StoryManager : MonoBehaviour
 {
@@ -40,6 +41,8 @@ public class StoryManager : MonoBehaviour
     public GameObject dialogPanel;
     public GameObject endPanel;
 
+    public EventSystem eSystem;
+
 
 
     private void Start()
@@ -48,6 +51,8 @@ public class StoryManager : MonoBehaviour
 
         fortuneWheel.SetActive(false);
         audioSource = GetComponent<AudioSource>();
+
+        Cursor.visible = true;
     }
 
     
@@ -84,10 +89,13 @@ public class StoryManager : MonoBehaviour
         {
             fortuneWheel.SetActive(true);
             talkOver = true;
+            
+            eSystem.SetSelectedGameObject(fortuneWheel.transform.GetChild(0).gameObject);
             continueButton.SetActive(false);
 
             if (PlayerPrefs.GetInt("Stage") == 2)
             {
+                eSystem.SetSelectedGameObject(endPanel.transform.GetChild(1).gameObject);
                 fortuneWheel.SetActive(false);
                
                 endPanel.SetActive(true);

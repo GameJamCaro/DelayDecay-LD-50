@@ -9,16 +9,19 @@ public class Door : MonoBehaviour
     SpriteRenderer spriteRen;
     public Color activeColor;
     public HealthManager healthManager;
+
+    AudioSource audioSource;
    
 
     private void Start()
     {
         spriteRen = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && atDoor)
+        if (Input.GetButtonDown("Fire1") && atDoor)
         {
             if(PlayerPrefs.GetInt("Stage") == 0 || healthManager.rabitScore == 5)
             StartCoroutine(WaitAndEnter());
@@ -46,6 +49,7 @@ public class Door : MonoBehaviour
 
     IEnumerator WaitAndEnter()
     {
+        audioSource.Play();
         PlayerPrefs.SetInt("Health", healthManager.currentHealth);
         yield return new WaitForSeconds(.5f);
         SceneManager.LoadScene("Shrine");

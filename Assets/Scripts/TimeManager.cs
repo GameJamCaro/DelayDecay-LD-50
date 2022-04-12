@@ -8,7 +8,7 @@ using UnityEngine.Tilemaps;
 
 public class TimeManager : MonoBehaviour
 {
-    public TextMeshProUGUI timeText;
+    public GameObject timeText;
     
     int tempTime;
 
@@ -22,8 +22,12 @@ public class TimeManager : MonoBehaviour
    
     void Start()
     {
+
+        Cursor.visible = false;
+
         if (PlayerPrefs.HasKey("Stage"))
         {
+            timeText.SetActive(true);
             if (PlayerPrefs.GetInt("Stage") == 1)
             {
                 tempTime = 60;
@@ -33,13 +37,15 @@ public class TimeManager : MonoBehaviour
             {
                 tempTime = 30;
             }
- 
+
             if (PlayerPrefs.GetInt("Stage") > 0)
             {
-                timeText.text = tempTime + " seconds";
+                timeText.GetComponentInChildren<TextMeshProUGUI>().text = tempTime + " sec";
                 StartCoroutine(CountDown());
             }
         }
+        else
+            timeText.SetActive(false);
     }
 
     
@@ -56,7 +62,7 @@ public class TimeManager : MonoBehaviour
             if (tempTime > 0)
             {
                 tempTime--;
-                timeText.text = tempTime + " seconds";
+                timeText.GetComponentInChildren<TextMeshProUGUI>().text = tempTime + " sec";
                 StartCoroutine(CountDown());
             }
             else
@@ -68,7 +74,7 @@ public class TimeManager : MonoBehaviour
 
     private IEnumerator TimesUp()
     {
-        timeText.text = "Time's up";
+        timeText.GetComponentInChildren<TextMeshProUGUI>().text = "Time's up";
         yield return new WaitForSeconds(3);
         foreach(Tilemap map in tilemaps)
         {

@@ -41,7 +41,7 @@ public class HealthManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E) && atBunny)
+        if(Input.GetButtonDown("Fire1") && atBunny)
         {
             rabitScore++;
             ClearRabitIcons();
