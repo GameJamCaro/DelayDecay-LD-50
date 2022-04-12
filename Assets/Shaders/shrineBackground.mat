@@ -51,4 +51,6 @@ Material:
     m_Colors:
     - Color_696d822cba4349b890acd61641d2fa5b: {r: 0.8584906, g: 0.7653525, b: 0.83694977, a: 0}
     - Color_860b41faaf39442e8a2a0fb1b6fa18bd: {r: 0.7254902, g: 0.4627451, b: 0.4627451, a: 0}
+    - _Color: {r: 0.754717, g: 0.35955858, b: 0.5688096, a: 0}
+    - _Color1: {r: 0.8490566, g: 0.7168921, b: 0.7168921, a: 0}
   m_BuildTextureStacks: []

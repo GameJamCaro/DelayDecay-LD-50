@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class HealthManager : MonoBehaviour
 {
@@ -23,12 +24,23 @@ public class HealthManager : MonoBehaviour
 
     public AudioClip hurtSound;
     public AudioClip healthSound;
+    public AudioClip bunnyCollectSound;
+    public AudioClip deathMotive;
+
+    public AudioSource mainMusic;
+
+    EventSystem eSystem;
+
+    
      
 
 
     private void Start()
     {
+        Time.timeScale = 1;
+
         audioSource = GetComponent<AudioSource>();
+        eSystem = GameObject.FindObjectOfType<EventSystem>();
 
         ClearRabitIcons();
         if (!PlayerPrefs.HasKey("Health"))
@@ -47,8 +59,10 @@ public class HealthManager : MonoBehaviour
             ClearRabitIcons();
             for (int i = 0; i < rabitScore; i++)
             {
-                rabitIcons[i].enabled = true;
+                rabitIcons[i].color = Color.white;
             }
+            audioSource.clip = bunnyCollectSound;
+            audioSource.Play();
             Destroy(currentBunny);
         }
     }
@@ -58,7 +72,11 @@ public class HealthManager : MonoBehaviour
     {
         if (currentHealth < 1)
         {
+            Time.timeScale = 0;
+            Cursor.visible = true;
+            mainMusic.Stop();
             lostPanel.SetActive(true);
+            eSystem.SetSelectedGameObject(lostPanel.transform.GetChild(1).gameObject);
         }
         else
         {
@@ -122,7 +140,12 @@ public class HealthManager : MonoBehaviour
     {
         foreach (Image icon in rabitIcons)
         {
-            icon.enabled = false;
+            if(PlayerPrefs.GetInt("Stage") == 0)
+            {
+                icon.enabled = false;
+            }
+            else
+                icon.color = Color.black;
         }
     }
 

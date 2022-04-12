@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
-using System;
-using UnityEngine.Tilemaps;
+using UnityEngine.EventSystems;
 
 public class TimeManager : MonoBehaviour
 {
@@ -12,16 +11,19 @@ public class TimeManager : MonoBehaviour
     
     int tempTime;
 
-    public Tilemap[] tilemaps;
+    public GameObject grassParent;
 
     public Color[] decayColors;
 
     public GameObject decayPanel;
-    
+
+    EventSystem eSystem;
+    public AudioSource mainMusic;
 
    
     void Start()
     {
+        eSystem = GameObject.FindObjectOfType<EventSystem>();
 
         Cursor.visible = false;
 
@@ -74,23 +76,30 @@ public class TimeManager : MonoBehaviour
 
     private IEnumerator TimesUp()
     {
+        mainMusic.Stop();
         timeText.GetComponentInChildren<TextMeshProUGUI>().text = "Time's up";
         yield return new WaitForSeconds(3);
-        foreach(Tilemap map in tilemaps)
+        for (int i = 0; i < grassParent.transform.childCount; i++)
         {
-            map.color = decayColors[0];
+            grassParent.transform.GetChild(i).GetComponent<SpriteRenderer>().material.SetColor("_Color", decayColors[0]);
+            grassParent.transform.GetChild(i).GetComponent<SpriteRenderer>().material.SetColor("_Color1", decayColors[1]);
         }
         yield return new WaitForSeconds(2);
-        foreach (Tilemap map in tilemaps)
+        for (int i = 0; i < grassParent.transform.childCount; i++)
         {
-            map.color = decayColors[1];
+            grassParent.transform.GetChild(i).GetComponent<SpriteRenderer>().material.SetColor("_Color", decayColors[1]);
+            grassParent.transform.GetChild(i).GetComponent<SpriteRenderer>().material.SetColor("_Color1", decayColors[2]);
         }
         yield return new WaitForSeconds(1);
-        foreach (Tilemap map in tilemaps)
+        for (int i = 0; i < grassParent.transform.childCount; i++)
         {
-            map.color = decayColors[2];
+            grassParent.transform.GetChild(i).GetComponent<SpriteRenderer>().material.SetColor("_Color", decayColors[2]);
+            grassParent.transform.GetChild(i).GetComponent<SpriteRenderer>().material.SetColor("_Color1", decayColors[3]);
         }
         yield return new WaitForSeconds(1.5f);
+        Time.timeScale = 0;
+        Cursor.visible = true;
         decayPanel.SetActive(true);
+        eSystem.SetSelectedGameObject(decayPanel.transform.GetChild(1).gameObject);
     }
 }
