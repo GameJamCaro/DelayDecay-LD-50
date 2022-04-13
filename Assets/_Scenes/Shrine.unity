@@ -2765,7 +2765,7 @@ MonoBehaviour:
   locations:
   - at the conifer forest
   - at the tiny village
-  - behind the lake
+  - behind the pond
   - at the dead forest
   - behind the graveyard
   exit: {fileID: 290022954}

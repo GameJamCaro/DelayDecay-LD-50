@@ -96,10 +96,11 @@ public class StoryManager : MonoBehaviour
 
             if (PlayerPrefs.GetInt("Stage") == 4)
             {
-                eSystem.SetSelectedGameObject(endPanel.transform.GetChild(1).gameObject);
+                
                 fortuneWheel.SetActive(false);
-               
+             
                 endPanel.SetActive(true);
+                eSystem.SetSelectedGameObject(endPanel.transform.GetChild(1).gameObject);
                 mainMusic.Stop();
             }
         }

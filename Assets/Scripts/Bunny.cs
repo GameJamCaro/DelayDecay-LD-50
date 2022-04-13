@@ -23,29 +23,87 @@ public class Bunny : MonoBehaviour
     }
 
 
+    bool stop;
+    bool flipOnce;
+
     private void Update()
     {
-        if(Vector2.Distance(transform.position, player.transform.position) < 10 && hoppingAway)
+        if (!stop)
         {
-            anim.SetBool("hopping", true);
-            stepSpeed = Random.Range(3, 7);
-            float step = stepSpeed * Time.deltaTime;
-            Vector2 target;
-            target.x = player.transform.position.x + xOff;
-            target.y = player.transform.position.y + yOff;
-            if ((transform.position.x - target.x) > 0  && Vector2.Distance(transform.position, player.transform.position) > 3)
+            if (Vector2.Distance(transform.position, player.transform.position) < 10 && hoppingAway)
             {
-                ren.flipX = true;
+                anim.SetBool("hopping", true);
+                stepSpeed = Random.Range(3, 7);
+                float step = stepSpeed * Time.deltaTime;
+                Vector2 target;
+                target.x = player.transform.position.x + xOff;
+                target.y = player.transform.position.y + yOff;
+                if ((transform.position.x - target.x) > 0.5f)
+                {
+                    ren.flipX = true;
+                }
+                if ((transform.position.x - target.x) < -.5f)
+                {
+                    ren.flipX = false;
+                }
+                transform.position = Vector2.MoveTowards(transform.position, target, -step);
+                StartCoroutine(HopAndWait());
             }
-            else
-            {
-                ren.flipX = false;
-            }
-            transform.position = Vector2.MoveTowards(transform.position, target, -step);
-            StartCoroutine(HopAndWait());
         }
+        else
+        {
+            float step = 1 * Time.deltaTime;
+            if (!flipOnce)
+            {
+                if (ren.flipX)
+                {
+                    ren.flipX = false;
+                }
+                else
+                    ren.flipX = true;
+
+                flipOnce = true;
+            }
+            Vector2 target;
+            target.x = lake.transform.position.x + xOff;
+            target.y = lake.transform.position.y + yOff;
+            transform.position = Vector2.MoveTowards(transform.position, target, -step);
+            anim.SetBool("hopping", true);
+        }
+
     }
 
+
+    GameObject lake;
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Border"))
+        {
+            lake = collision.gameObject;
+            stop = true;
+           
+
+        }
+
+
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Border"))
+        {
+            StartCoroutine(ResetStop());
+
+        }
+
+        
+    }
+
+    IEnumerator ResetStop()
+    {
+        yield return new WaitForSeconds(2);
+        stop = false;
+    }
 
 
     IEnumerator AnimationVariation()
@@ -69,6 +127,8 @@ public class Bunny : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(2,4));
         hoppingAway = true;
     }
+
+    
 
 
 

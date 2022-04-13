@@ -9,6 +9,8 @@ TagManager:
   - Rabit
   - Obstacle
   - Feet
+  - Lake
+  - Border
   layers:
   - Default
   - TransparentFX
@@ -51,4 +53,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 4115210559
+    locked: 0
+  - name: Border
+    uniqueID: 2109408259
     locked: 0

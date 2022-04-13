@@ -7,8 +7,8 @@ Bunnies are just so fluffy and adorable – everybody loves bunnies!
 //Greeny
 So why do you need their hearts?
 //God
-When I eat enough of them I too become adorable!
+When I eat enough of them I will become adorable too!
 //Greeny
 ?!?
 //God
-As you are so nosy your time is even more limited go!
+As you are so nosy your time is even more limited -\> Ask and go!
