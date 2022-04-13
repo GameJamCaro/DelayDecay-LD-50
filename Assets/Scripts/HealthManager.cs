@@ -53,7 +53,7 @@ public class HealthManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetButtonDown("Fire1") && atBunny)
+        if((Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.E)) && atBunny)
         {
             rabitScore++;
             ClearRabitIcons();
@@ -140,7 +140,7 @@ public class HealthManager : MonoBehaviour
     {
         foreach (Image icon in rabitIcons)
         {
-            if(PlayerPrefs.GetInt("Stage") == 0)
+            if(PlayerPrefs.GetInt("Stage") == 0 || PlayerPrefs.GetInt("Stage") == 4)
             {
                 icon.enabled = false;
             }

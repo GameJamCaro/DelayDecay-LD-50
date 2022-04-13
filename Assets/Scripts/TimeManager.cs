@@ -20,6 +20,8 @@ public class TimeManager : MonoBehaviour
     EventSystem eSystem;
     public AudioSource mainMusic;
 
+    public Camera cam;
+
    
     void Start()
     {
@@ -36,6 +38,16 @@ public class TimeManager : MonoBehaviour
             }
 
             if (PlayerPrefs.GetInt("Stage") == 2)
+            {
+                tempTime = 50;
+            }
+
+            if (PlayerPrefs.GetInt("Stage") == 3)
+            {
+                tempTime = 40;
+            }
+
+            if (PlayerPrefs.GetInt("Stage") == 4)
             {
                 tempTime = 30;
             }
@@ -78,23 +90,26 @@ public class TimeManager : MonoBehaviour
     {
         mainMusic.Stop();
         timeText.GetComponentInChildren<TextMeshProUGUI>().text = "Time's up";
-        yield return new WaitForSeconds(3);
+       
         for (int i = 0; i < grassParent.transform.childCount; i++)
         {
             grassParent.transform.GetChild(i).GetComponent<SpriteRenderer>().material.SetColor("_Color", decayColors[0]);
             grassParent.transform.GetChild(i).GetComponent<SpriteRenderer>().material.SetColor("_Color1", decayColors[1]);
+            cam.backgroundColor = decayColors[0];
         }
         yield return new WaitForSeconds(2);
         for (int i = 0; i < grassParent.transform.childCount; i++)
         {
             grassParent.transform.GetChild(i).GetComponent<SpriteRenderer>().material.SetColor("_Color", decayColors[1]);
             grassParent.transform.GetChild(i).GetComponent<SpriteRenderer>().material.SetColor("_Color1", decayColors[2]);
+            cam.backgroundColor = decayColors[2];
         }
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         for (int i = 0; i < grassParent.transform.childCount; i++)
         {
             grassParent.transform.GetChild(i).GetComponent<SpriteRenderer>().material.SetColor("_Color", decayColors[2]);
             grassParent.transform.GetChild(i).GetComponent<SpriteRenderer>().material.SetColor("_Color1", decayColors[3]);
+            cam.backgroundColor = decayColors[3];
         }
         yield return new WaitForSeconds(1.5f);
         Time.timeScale = 0;

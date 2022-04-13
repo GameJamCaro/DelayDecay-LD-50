@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d5751a2c961df945a34295ccf5e576d, type: 3}
-  m_Name: TreePrefabBrush
+  m_Name: RIPPrefabs
   m_EditorClassIdentifier: 
   m_Cells:
   - m_Tile: {fileID: 0}
@@ -37,6 +37,10 @@ MonoBehaviour:
   m_CanChangeZPosition: 0
   m_FloodFillContiguousOnly: 1
   m_Prefabs:
-  - {fileID: 8350262680804785931, guid: 58b59a213cb51a144918f7b6702c9f08, type: 3}
+  - {fileID: 1846090529722421876, guid: 50e3029c6a7ec494ba3134fb2e92706d, type: 3}
+  - {fileID: 5154905440195571870, guid: 049cb5b2b6f508440940928bb39d7fd1, type: 3}
+  - {fileID: 5735593745645061752, guid: 969dc199fd7dd224b9f00a5f01835251, type: 3}
+  - {fileID: 9080184015081855503, guid: db5040cf5d79f814f9781c8c8ae8b8aa, type: 3}
+  - {fileID: 7215133614284402990, guid: e21f655893a98614d9d9491d188eae64, type: 3}
   m_PerlinScale: 0.5
   m_Anchor: {x: 0.5, y: 0.5, z: 0.5}

@@ -93,7 +93,7 @@ public class StoryManager : MonoBehaviour
             eSystem.SetSelectedGameObject(fortuneWheel.transform.GetChild(0).gameObject);
             continueButton.SetActive(false);
 
-            if (PlayerPrefs.GetInt("Stage") == 2)
+            if (PlayerPrefs.GetInt("Stage") == 4)
             {
                 eSystem.SetSelectedGameObject(endPanel.transform.GetChild(1).gameObject);
                 fortuneWheel.SetActive(false);
@@ -133,7 +133,10 @@ public class StoryManager : MonoBehaviour
         if (!once)
         {
             StopAllCoroutines();
-            youText.text = currentText;
+            if (lineCounter % 2 == 1)
+                godText.text = currentText;
+            if (lineCounter % 2 == 0)
+                youText.text = currentText;
             audioSource.clip = coinSound;
             audioSource.loop = true;
             audioSource.Play();
@@ -161,7 +164,7 @@ public class StoryManager : MonoBehaviour
         for (int j = 0; j < probabilty; j++)
         {
             yield return new WaitForSeconds(waitTime);
-           
+            
           
             if (i < locations.Length-1)
                 i++;
@@ -182,7 +185,19 @@ public class StoryManager : MonoBehaviour
                 waitTime = .5f;
                 once2 = true;
             }
+            if (i == PlayerPrefs.GetInt("LocationID"))
+            {
+                if (i < locations.Length-1)
+                    i += 1;
+                else
+                    i = 1;
+            }
             fortuneWheel.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = locations[i];
+            
+        }
+        if (PlayerPrefs.GetInt("Stage") == 3)
+        {
+            fortuneWheel.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "???";
         }
         PlayerPrefs.SetInt("LocationID", i);
         audioSource.loop = false;
