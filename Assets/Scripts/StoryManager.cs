@@ -42,6 +42,7 @@ public class StoryManager : MonoBehaviour
     public GameObject endPanel;
 
     public EventSystem eSystem;
+    public AudioSource mainMusic;
 
 
 
@@ -99,6 +100,7 @@ public class StoryManager : MonoBehaviour
                 fortuneWheel.SetActive(false);
                
                 endPanel.SetActive(true);
+                mainMusic.Stop();
             }
         }
     }
@@ -203,6 +205,7 @@ public class StoryManager : MonoBehaviour
         audioSource.loop = false;
         audioSource.Stop();
         exit.SetActive(true);
+       
        
 
 
