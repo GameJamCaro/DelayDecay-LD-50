@@ -44,6 +44,8 @@ public class StoryManager : MonoBehaviour
     public EventSystem eSystem;
     public AudioSource mainMusic;
 
+    public TMP_FontAsset neutralFont;
+
 
 
     private void Start()
@@ -144,8 +146,8 @@ public class StoryManager : MonoBehaviour
             audioSource.loop = true;
             audioSource.Play();
             probabilty = Random.Range(10, 20);
-            diceText.text = "Your lucky number is " + probabilty;
-            fortuneWheel.transform.GetChild(1).gameObject.SetActive(true);
+            
+            
             StartCoroutine(RotateResults());
             once = true;
         }
@@ -195,17 +197,25 @@ public class StoryManager : MonoBehaviour
                 else
                     i = 1;
             }
-            fortuneWheel.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = locations[i];
+            diceText.font = neutralFont;
+            diceText.text = locations[i];
             
         }
         if (PlayerPrefs.GetInt("Stage") == 3)
         {
-            fortuneWheel.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "???";
+            diceText.text = "There are no more bunnies";
+            story = new Story(inkFiles[4].text);
+            continueButton.SetActive(true);
+            eSystem.SetSelectedGameObject(continueButton);
+        }
+        else 
+        {
+            exit.SetActive(true);
         }
         PlayerPrefs.SetInt("LocationID", i);
         audioSource.loop = false;
         audioSource.Stop();
-        exit.SetActive(true);
+      
        
        
 

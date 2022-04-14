@@ -93,7 +93,7 @@ public class HealthManager : MonoBehaviour
         {
             if (!hurt)
             {
-                Debug.Log(currentHealth);
+                
                 LoseHealth(1);
                 HealthMeter.value = currentHealth;
                 hurt = true;

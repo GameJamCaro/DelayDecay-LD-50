@@ -1,14 +1,11 @@
-//God
-Where are my bunnies?
-
 //Greeny
-There are no bunnies anymore!
+You've heard the oracle - there are no more bunnies!
 
 //God
 And what am I supposed to do now?
 
 //Greeny
-Decay is inevitable anyway - just take it easy!
+Just take it easy. Nobody gets loved by destroying others!
 
 //God
-Maybe your right °_°
+Maybe you're right °_°

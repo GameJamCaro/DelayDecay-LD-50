@@ -10,7 +10,7 @@ public class GrassController : MonoBehaviour
     private void Start()
     {
         ren = GetComponent<SpriteRenderer>();
-        //StartCoroutine(GrassStart());
+        StartCoroutine(GrassStart());
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -37,8 +37,8 @@ public class GrassController : MonoBehaviour
     IEnumerator GrassStart()
     {
         ren.material.SetFloat("speed", 3);
-        yield return new WaitForSeconds(1);
-        ren.material.SetFloat("speed", .5f);
+        yield return new WaitForSeconds(2);
+        ren.material.SetFloat("speed", 1);
     }
 
     WaitForSeconds wait = new WaitForSeconds(.3f);
@@ -46,7 +46,7 @@ public class GrassController : MonoBehaviour
     IEnumerator WalkingThroughGrass()
     {
         
-        ren.material.SetFloat("speed", 1);
+        ren.material.SetFloat("speed", 3);
         yield return wait;
         ren.material.SetFloat("speed", .2f);
        
@@ -56,9 +56,9 @@ public class GrassController : MonoBehaviour
     IEnumerator LeavingGrass()
     {
         yield return wait;
-        ren.material.SetFloat("speed", 1);
+        ren.material.SetFloat("speed", .5f);
         yield return wait;
-        ren.material.SetFloat("speed", 3);
+        ren.material.SetFloat("speed", 1);
     }
 
     
